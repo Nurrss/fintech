@@ -1,1 +1,1 @@
-# fintech
+# fintech : platform bank services
