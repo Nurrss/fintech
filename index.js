@@ -2,12 +2,15 @@ const express = require("express");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
 const studentsRoute = require("./routes/students");
+const subjectsRoute = require("./routes/subjects");
+
 
 const app = express();
 
 app.use(morgan("common"));
 app.use(express.json());
 app.use("/students", studentsRoute);
+app.use("/subjects", subjectsRoute);
 
 mongoose
   .connect(
