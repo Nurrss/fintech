@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const studentsRoute = require("./routes/students");
 const subjectsRoute = require("./routes/subjects");
 
-
 const app = express();
 
 app.use(morgan("common"));
