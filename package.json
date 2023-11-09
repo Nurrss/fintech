@@ -2,9 +2,8 @@
   "name": "fintech",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "registration.js",
   "scripts": {
-    "build": "tailwindcss build -i style/main.css -o public/styles.css",
     "dev": "nodemon index.js"
   },
   "author": "",
