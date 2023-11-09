@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "tailwindcss build -i style/main.css -o public/styles.css",
     "dev": "nodemon index.js"
   },
   "author": "",
@@ -14,5 +15,9 @@
     "mongoose": "^8.0.0",
     "morgan": "^1.10.0",
     "nodemon": "^3.0.1"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5"
   }
 }
