@@ -11,43 +11,58 @@
       <div class="div-2">
         <div class="div-3">
           <div class="div-4">
-            <div class="div-5">кредиты</div>
-            <div class="div-6">долги</div>
-            <div class="div-7">бюджет</div>
-            <div class="div-8">платежи</div>
+            <a href="" class="div-5">кредиты</a>
+            <a href="" class="div-5">долги</a>
+            <a href="" class="div-5">бюджет</a>
+            <a href="" class="div-5">платежи</a>
+            <a href="" class="div-5">Виртуальный помощник</a>
           </div>
-          <img loading="lazy" srcset="..." class="img" />
         </div>
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/f632dbe9-0fc2-441d-8232-c8f3edbe98b8?"
-          class="img-2"
-        />
+
         <div class="div-9">Калькулятор</div>
         <div class="div-10">
           <div class="div-11">
             <div class="div-12">Сумма кредита</div>
+            <div class="volume-control">
+              <input
+                type="range"
+                id="volume"
+                name="volume"
+                min="100000"
+                max="1000000"
+                value="614000"
+              />
+            </div>
             <div class="div-13">100 000 ₸</div>
           </div>
           <div class="div-14"></div>
           <div class="div-15">
             <div class="div-16">
               <div class="div-17">
-                <div class="column"><div class="div-18">614.000₸</div></div>
+                <div class="column">
+                  <span class="div-18" id="volume-value">100000KZT</span>
+                </div>
                 <div class="column-2">
                   <div class="div-19">
                     <div class="div-20">Ежемесячный платеж</div>
                     <div class="div-21">Переплата</div>
                     <div class="div-22">
-                      <div class="div-23"></div>
-                      <div class="div-24">Я согласен(-на)</div>
+                      <div class="div-23">
+                        <input
+                          type="checkbox"
+                          id="checkbox1"
+                          name="checkboxGroup"
+                          value="option1"
+                        />
+                        <label for="checkbox1">Я согласен(-на)</label>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="column-3">
                   <div class="div-25">
-                    <div class="div-26">114.518₸</div>
-                    <div class="div-27">34.456₸</div>
+                    <div id="cost" class="div-26"></div>
+                    <div id="cost-porcent" class="div-27"></div>
                   </div>
                 </div>
               </div>
@@ -74,43 +89,44 @@
             <div class="div-42">
               <div class="div-43">
                 <div class="div-44">Мы в соц. сетях:</div>
-                <img loading="lazy" srcset="..." class="img" />
+                <!-- <img loading="lazy" srcset="..." class="img" /> -->
                 <div class="div-45">bcc.kz</div>
               </div>
               <div class="div-46">
                 <div class="div-47">
-                  <img loading="lazy" srcset="..." class="img-3" />
+                  <!-- <img loading="lazy" srcset="..." class="img-3" /> -->
                   <div class="div-48">bcc.kz</div>
                 </div>
                 <div class="div-49">
-                  <img loading="lazy" srcset="..." class="img-4" />
+                  <!-- <img loading="lazy" srcset="..." class="img-4" /> -->
                   <div class="div-50">Виртуальный помощник</div>
-                  <img
+                  <!-- <img
                     loading="lazy"
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/88b17bb3-a54c-41ca-bfd6-0cf1f7a0c3ae?"
                     class="img-5"
-                  />
+                  /> -->
                 </div>
               </div>
             </div>
             <div class="div-51">
-              Контакты
+              <a href="">Контакты</a>
               <br />
-              Профиль
+              <a href="">Профиль</a>
               <br />
-              Кредиты
+              <a href="">Кредиты</a>
             </div>
             <div class="div-52">
-              Долги
+              <a href="">Долги</a>
               <br />
-              Бюджеты
+              <a href="">Бюджеты</a>
               <br />
-              Платежи
+              <a href="">Платежи</a>
               <br />
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="/fintech/scripts/script.js"></script>
   </body>
 </html>
