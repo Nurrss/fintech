@@ -20,7 +20,7 @@ body {
 .div-4 {
   z-index: 5;
   width: 100%;
-  height: 3rem;
+  height: 4rem;
   background-color: rgba(255,255,255,1);
   position: fixed;
   display: flex;
@@ -35,6 +35,7 @@ body {
   }
 }
 .div-5 {
+  margin-top: 1rem;
   display: flex;
   margin-left: 50px;
   font-size: 1.4rem;
