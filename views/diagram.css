@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+}
+
+a{
+    color: #000;
+}
+
+body{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: Manrope;
+}
+
+.container{
+    display: flex;
+    width: 90%;
+    flex-direction: column;
+}
+
+.div-4 {
+    width: 90%;
+    height: 4rem;
+    background-color: rgba(255,255,255,1);
+    position: fixed;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+  @media (max-width: 991px) {
+    .div-4 {
+      max-width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  .div-5 {
+    margin-top: 1rem;
+    display: flex;
+    margin-left: 50px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #000;
+  }
+  
+.container h1{
+    margin-top: 5rem;
+    font-family: Manrope;
+    color: rgba(39,174,96,1);
+}
+
+.diagram_and_data{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    align-items: flex-end;
+}
+
+.rectangle-container {
+    display: flex;
+    align-items: center;
+}
+
+.outcomes{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.right_side_data{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.right_side_data h2{
+    font-size: 2rem;
+}
+
+.right_side_data p{
+    font-size: 1.2rem;
+}
+
+.mini-rectangle {
+    /* background-color: #3498db;  */
+    color: #ffffff; 
+    padding: 1rem;
+    border-radius: 3px; 
+}
+
+.text-to-right {
+    margin-left: 10px; 
+    font-size: 1.2rem;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 250px; /* Adjust the height of the container */
+    gap: 3rem;
+}
+
+.chart {
+    width: 70px;
+    background-color: blue;
+    transition: height 2s ease; /* Animation duration and easing */
+}
+
+#chart1 { animation: grow1 2s ease; }
+#chart2 { animation: grow2 2s ease; }
+#chart3 { animation: grow3 2s ease; }
+#chart4 { animation: grow4 2s ease; }
+#chart5 { animation: grow5 2s ease; }
+#chart6 { animation: grow6 2s ease; }
+
+@keyframes grow1 {
+    0% { height: 0; }
+    100% { height: 89px; }
+}
+
+@keyframes grow2 {
+    0% { height: 0; }
+    100% { height: 300px; }
+}
+
+@keyframes grow3 {
+    0% { height: 0; }
+    100% { height: 120px; }
+}
+
+@keyframes grow4 {
+    0% { height: 0; }
+    100% { height: 70px; }
+}
+
+@keyframes grow5 {
+    0% { height: 0; }
+    100% { height: 50px; }
+}
+
+@keyframes grow6 {
+    0% { height: 0; }
+    100% { height: 40px; }
+}
+
+/* Set the final height outside of keyframes */
+#chart1 { height: 89px; }
+#chart2 { height: 300px; }
+#chart3 { height: 120px; }
+#chart4 { height: 70px; }
+#chart5 { height: 50px; }
+#chart6 { height: 40px; }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="registration.css" />
     <title>Fintech</title>
   </head>
   <body>
@@ -25,7 +25,8 @@
                   <div class="div-9"><div class="div-10"></div></div>
                 </div>
                 <div class="column-3">
-                  <div class="div-11"><div class="div-12">Вход</div></div>
+                  <a href="../views/login.html"><div class="div-11"><div class="div-12">Вход</div></div></a>
+                  </a>
                 </div>
               </div>
             </div>
@@ -65,10 +66,39 @@
               />
               <label for="checkbox1">Запомни меня</label>
             </div>
-            <button class="div-32">Зарегистрироваться</button>
+           <button class="div-32" onclick="showPopup()">Зарегистрироваться</button>
           </div>
         </div>
       </div>
     </div>
+    <div id="popup-container" class="popup">
+      <h2>Verification</h2>
+      <p>
+        Enter the verification code sent to your phone:
+      </p>
+      <div class="verification-inputs">
+        <input type="text" maxlength="1" />
+        <input type="text" maxlength="1" />
+        <input type="text" maxlength="1" />
+        <input type="text" maxlength="1" />
+      </div>
+      <a href="../views/login.html"><button onclick="sendVerificationCode(); closePopup()">Send</button></a>
+      <!-- <button onclick="closePopup()">Close</button> -->
+    </div>
+    
+    <script>
+      function showPopup() {
+        document.getElementById('popup-container').style.display = 'block';
+      }
+    
+      function closePopup() {
+        document.getElementById('popup-container').style.display = 'none';
+      }
+
+      function sendVerificationCode() {
+    // Add your logic to handle the verification code and sending it
+    alert('Verification code sent!'); // You can replace this with your actual logic
+  }
+    </script>
   </body>
 </html>
