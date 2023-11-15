@@ -5,6 +5,7 @@ body {
   font-size: 14px;
   margin: 0;
   padding: 0;
+  font-family: 'Manrope', sans-serif;
 }
 
 .container {
@@ -68,7 +69,6 @@ body {
   color: rgba(0,0,0,1);
   top: 0px;
   left: 3px;
-  font-family: Manrope;
   font-weight: Bold;
   font-size: 3rem;
   opacity: 1;
@@ -105,7 +105,7 @@ body {
 .overlay-image {
   display: block;
   position: absolute;
-  top: -20px;
+  top: -3rem;
   left: 920px;
   z-index: 2;
 }
@@ -114,7 +114,6 @@ body {
   width: 449px;
   color: rgba(0,0,0,1);
   margin-top: 100px;
-  font-family: Manrope;
   font-weight: Bold;
   font-size: 3rem;
   /* opacity: 1; */
@@ -130,12 +129,13 @@ body {
   gap: 20px 20px;
 }
 
-.monitoring_budget {  background-image: url(../images/image\ 8.png);  }
-.educational_credit {  background-image: url(../images/image\ 9.png); }
-.virtual_helper {  background-image: url(../images/image\ 10.png); }
-.outcome_monitoring {  background-image: url(../images/image\ 11.png); }
-.benefit_calculator {  background-image: url(../images/image\ 12.png); }
-.personal_financial_position {  background-image: url(../images/image\ 13.png);  }
+.monitoring_budget {  background-image: url(../views/images/monitoring_budget.png);  }
+.educational_credit {  background-image: url(../views/images/educational\ credit.png); }
+.virtual_helper {  background-image: url(../views/images/virtual_helper.png); }
+.outcome_monitoring {  background-image: url(../views/images/outcome_monitoring.png); }
+.benefit_calculator {  background-image: url(../views/images/benefit_calculator.png); }
+.personal_financial_position {  background-image: url(../views/images/personal_financial_position.png);  }
+
 
 .educational_credit,
 .virtual_helper, 
@@ -153,40 +153,28 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   color: rgba(255,255,255,1);
-  font-family: Manrope;
   opacity: 1;
   text-align: left;
   padding-left: 20px;
 }
 
-.educational_credit h2,
-.virtual_helper h2, 
-.monitoring_budget h2,
-.benefit_calculator h2,
-.outcome_monitoring h2,
-.personal_financial_position h2{
+.services_container h2{
   font-weight: Bold;
   font-size: 2.5rem;
 }
 
-.educational_credit p,
-.virtual_helper p, 
-.monitoring_budget p,
-.benefit_calculator p,
-.outcome_monitoring p,
-.personal_financial_position p{
+.services_container p{
   font-size: 20px;
   margin-top: auto;
 }
 
 .educational_credit p{
-  margin-top: auto - 20px;
+  margin-top: -0.7rem;
 }
 
 .why_work_text {
   width: 891px;
   color: rgba(0,0,0,1);
-  font-family: Manrope;
   font-weight: Bold;
   margin-top: 100px;
   font-size: 3rem;
@@ -201,7 +189,6 @@ body {
   width: 100%;
   gap: 20px;
   margin-top: 70px;
-  font-family: Manrope;
 }
 
 /* .v0_658 {
@@ -266,7 +253,6 @@ body {
 
 .our_adress_text {
   color: rgba(0,0,0,1);
-  font-family: Manrope;
   font-weight: Bold;
   font-size: 3rem;
   opacity: 1;
@@ -286,7 +272,6 @@ body {
 .choose_city {
   color: rgba(255,255,255,1);
   /* margin: 10px; */
-  font-family: Manrope;
   font-weight: Regular;
   font-size: 2rem;
   opacity: 1;
@@ -294,7 +279,6 @@ body {
 
 .address_text_format {
   color: rgba(39,174,96,1);
-  font-family: Manrope;
   font-weight: Medium;
   font-size: 2rem;
   opacity: 1;
@@ -304,7 +288,6 @@ body {
 
 .work_24 {
   color: rgba(0,0,0,1);
-  font-family: Manrope;
   font-weight: Medium;
   font-size: 2.2rem;
   opacity: 1;
@@ -314,7 +297,6 @@ body {
 
 .contacts {
   color: rgba(0,0,0,1);
-  font-family: Manrope;
   font-weight: Bold;
   font-size: 2.2rem;
   opacity: 1;
@@ -324,7 +306,6 @@ body {
 
 .number_505 {
   color: rgba(0,0,0,1);
-  font-family: Manrope;
   font-weight: Medium;
   font-size: 1.5rem;
   opacity: 1;
@@ -332,7 +313,6 @@ body {
   margin: 0.3rem 0;
 }
 .number_605 {
-  font-family: Manrope;
   font-weight: Medium;
   color: rgba(0,0,0,1);
   font-size: 1.5rem;
@@ -341,7 +321,6 @@ body {
 }
 
 .ask_virtual_helper{
-  font-family: Manrope;
   font-weight: Medium;
   font-size: 1.8rem;
   text-align: left;
@@ -350,5 +329,5 @@ body {
 #map{
   width: 40%;
   height: 600px;
-  margin-top: 50px;
+  margin-top: 90px;
 }
