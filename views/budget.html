@@ -255,7 +255,7 @@ function changeContent() {
                 </div>
             </div>
             <h2>Общие затраты - 722.000Т</h2>   <!-- using js or database to count-->
-            <p>На 23% больше чем в предыдущем месяце</p>    <!-- using js and database to compare-->
+            <p onclick='changeContent2()'>На 23% больше чем в предыдущем месяце</p>    <!-- using js and database to compare-->
         </div>
     </div>
     `;
@@ -263,8 +263,11 @@ function changeContent() {
     document.getElementById('styleLink').href = 'diagram.css';
 }
 
-
-
+function changeContent2 () {
+    document.querySelector('.container').innerHTML = `
+    <h2> hello </h2>
+    `
+}
     </script>
 </body>
 </html>

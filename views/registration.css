@@ -14,22 +14,51 @@
   padding: 20px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+  z-index: 5;
+}
+
+.popup_inside_container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 500px;
+  height: 450px;
+}
+
+.popup_inside_container h2{
+  text-align: center;
+  font-size: 2rem;
+  color: #000;
+}
+
+.popup_inside_container p{
+  text-align: center;
+  font-size: 1.2rem;
+  color: #B4B4B4;
 }
 
 #popup-container button {
-  margin-top: 10px;
+  margin-top: 1rem;
+  background-color: rgba(39,174,96,1);
+  color: #fff;
+  border: none;
+  padding: 1rem 7rem;
 }
 
 #popup-container .verification-inputs {
   display: flex;
   gap: 10px;
+  height: 5rem;
 }
 
 #popup-container input {
-  width: 40px;
+  width: 4rem;
   text-align: center;
   font-size: 16px;
+  border-radius: 15%;
+  border: 2px solid rgba(39,174,96,1);
 }
 
 .div {

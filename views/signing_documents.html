@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signing_documents.css">
+    <title>Потверждение личности</title>
+</head>
+<body>
+    <div class="container">
+        <div class="div-4">
+            <a href="../views/main_page.html" class="div-5">Главная</a>
+            <a href="" class="div-5">Кредиты</a>
+            <a href="" class="div-5">Бюджет</a>
+            <a href="" class="div-5">Платежи</a>
+            <a href="" class="div-5">Виртуальный помощник</a>
+        </div>
+        <div class="content">
+            <div class="left_side_container">
+                <h1>Онлайн-заявка на выдачу <br> академического кредита</h1>
+                <div class="credit_data">
+                    <img src="../views/images/checked_checkbox.png" alt="">
+                    <h2>Данные о кредите</h2>
+                </div>
+                <div class="identity_proof">
+                    <img src="../views/images/checked_checkbox.png" alt="">
+                    <h2>Потверждение <br> личности</h2>
+                </div>
+                <div class="documents">
+                    <img src="../views/images/checked_checkbox.png" alt="">
+                    <h2>Документы</h2>
+                </div>
+                <div class="credit_available">
+                    <img src="../views/images/checked_checkbox.png" alt="">
+                    <h2>Кредитоспособность</h2>
+                </div>
+                <div class="bank_decision">
+                    <img src="../views/images/checked_checkbox.png" alt="">
+                    <h2>Решение банка</h2>
+                </div>
+                <div class="signings_documents">
+                    <img src="../views/images/unchecked_checkbox.png" alt="">
+                    <h2>Подписание документов</h2>
+                </div>
+                <div class="completion">
+                    <img src="../views/images/unchecked_checkbox.png" alt="">
+                    <h2>Завершение</h2>
+                </div>
+            </div>
+            <div class="right_side_container">
+                <h2>Подписать документы</h2>
+                <p>Подписание документа идет в онлайн формате, прикрепите свой <br> ЭЦП-ключ. </p>
+                <div class="document-container">
+                    <span></span>
+                    <div class="file-input-container">
+                        <label class="file-input-icon" for="documentInput">
+                            <img width="25rem" src="../views/images/paperclip.png" alt="Paperclip Icon">
+                        </label>
+                        <span class="attached-document" id="attachedDocument">ЭЦП</span>
+                        <input id="documentInput" class="file-input" type="file" style="display:none;" accept=".p12" onchange="updateAttachedDocument(this)">
+                    </div>
+            
+                    <button class="attach-button" onclick="navigateToAnotherPage()">Подписать документы</button>
+                </div>
+                <!-- <button>Подписать документы</button> -->
+            </div>
+        </div>
+    </div>
+    <script>
+        function navigateToAnotherPage() {
+            // Change the href to the desired destination page
+            window.location.href = "#";
+        }
+
+        function updateAttachedDocument(input) {
+            const attachedDocument = document.getElementById('attachedDocument');
+            if (input.files.length > 0) {
+                attachedDocument.textContent = input.files[0].name;
+            } else {
+                attachedDocument.textContent = '';
+            }
+        }
+    </script>
+</body>
+</html>

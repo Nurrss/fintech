@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
+    <link id="styleLink" rel="stylesheet" href="credits.css">
+    <script class="identity_proof_script1" defer></script>
+    <script class="identity_proof_script2" defer></script>
+    <title>Credit</title>
+</head>
+<body>
+    <div class="container">
+        <div class="div-4">
+            <a href="../views/main_page.html" class="div-5">Главная</a>
+            <a href="../views/credits.html" class="div-5">Кредиты</a>
+            <a href="../views/budget.html" class="div-5">Бюджет</a>
+            <a href="" class="div-5">Платежи</a>
+            <a href="" class="div-5">Виртуальный помощник</a>
+        </div>
+        <div class="content">
+            <div class="left_side_container">
+                <h1>Академический кредит</h1>
+                <div class="academic_credit_info_1">
+                    <div class="sum">
+                        <h4>Сумма</h4>
+                        <p>614.000T</p>                    
+                    </div>
+                    <div class="deadline">
+                        <h4>Срок</h4>
+                        <p>6 месяцев</p>                    
+                    </div>
+                </div>
+                <div class="academic_credit_info_2">
+                    <div class="montly_payment"> 
+                        <h4>Ежемесячный <br> платеж</h4>
+                        <p>114.782T</p>                    
+                    </div>
+                    <div class="overpay">
+                        <h4>Переплата</h4>
+                        <p>78.129T</p>                    
+                    </div>
+                </div>
+                <img width="300px" src="../views/images/credit_card (2).png" alt="">
+                <p>Вам будет запущена Карта BBC.kz(деньги будут <br> зачислены на неё)</p>
+            </div>
+            <div class="right_side_container">
+                <h2>Заполните заявку</h2>
+                <input class="phone_input" type="text" placeholder="Номер телефона">
+                <input class="inn_input" type="text" placeholder="ИИН">
+                <label>
+                    <input type="checkbox" class="checkbox1" id="checkboxIfAdult">
+                    <p>Мне уже исполнилось 18 лет</p>
+                </label>
+                <h2>Потвердите пароль</h2>
+                <input class="password_input" type="password" placeholder="Пароль">
+                <input class="repassword_input" type="password" placeholder="Потвердите пароль">
+                <button onclick="checkIfAdult(); startTimer()">Отправить заявку</button>
+                <label>
+                    <input type="checkbox" class="checkbox1">
+                    <p>Я даю согласие на обработку персональных <br> данных и данных из кредитного бюро</p>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div id="verification_popup-container" class="popup">
+        <div class="popup_inside_container">
+            <h2>Потвердите код</h2>
+            <p>
+            Пожалуйста, введите код, который <br> мы отправили на ваш номер
+            </p>
+            <div class="verification-inputs">
+            <input type="text" maxlength="1"/>
+            <input type="text" maxlength="1"/>
+            <input type="text" maxlength="1"/>
+            <input type="text" maxlength="1"/>
+            </div>
+            <h3 onclick="resendCode()" id="resendButton">Запросите новый код</h3>
+            <h3 class="verification_code_timer">00:10</h3>
+            <a href="../views/proof_identity.html"><button onclick="sendVerificationCode(); closeVerification();">Send</button></a>
+            <!-- <button onclick="closePopup()">Close</button> -->
+        </div>
+      </div>
+
+    <div id="under_adult_popup_container">
+        <div class="under_popup_inside_container">
+            <p>Если вам нет 18 лет, ответственность за ваш <br> академический кредит несет ваш родитель <br> или опекун. Далее заполняйте документы <br> этого человека</p>
+            <a href="../views/proof_identity.html" onclick="closeIfAdult();"><button>Принять условие</button></a>
+            <a href="../views/main_page.html" onclick="closeIfAdult()"><button>На главную</button></a>
+        </div>
+    </div>
+
+    <script src="credits.js"></script>
+</body>
+</html>
