@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet" /><link href="../views/main_page.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="div-4">
+                <a href="" class="div-5">кредиты</a>
+                <a href="" class="div-5">долги</a>
+                <a href="../views/budget.html" class="div-5">бюджет</a>
+                <a href="" class="div-5">платежи</a>
+                <a href="" class="div-5">Виртуальный помощник</a>
+            </div>
+                          
+            <div class="welcome_container">
+                <div class="left-content">
+                    <h1 class="welcome_text">Первый в Казахстане <br> банковский сервис <br> для студентов</h1>
+                    <button class="button">Начать</button>
+                  </div>
+
+                  <div class="right-content">
+                    <img class="overlay-image" src="../views/images/welcome_man.png" alt="Person Image" width="550" height="701,25">
+                    <img class="background-image" src="../views/images/фон круг.png" alt="" width="600" height="600">
+                  </div>
+            </div>
+
+            <span class="our-services">Наши услуги:</span>
+            
+            <div class="services_container">
+                <span class="monitoring_budget">
+                    <h2>Отслеживание <br> бюджета</h2>
+                    <p class="v0_710">подробнее</p>
+                </span>
+    
+                <span class="educational_credit">
+                    <h2>Оформление <br> образовательных <br> кредитов</h2>
+                    <p class="v0_711">подробнее</p>
+                </span>
+                
+                <span class="virtual_helper">
+                    <h2>Виртуальный <br> помощник</h2>
+                    <p class="v0_712">подробнее</p>
+                </span>
+                
+                <span class="outcome_monitoring">
+                    <h2>Мониторинг<br> расходов</h2>
+                    <p class="v0_713">подробнее</p>
+                </span>
+                    
+                <span class="benefit_calculator">
+                    <h2>Калькулятор <br> льгот</h2>
+                    <p class="v0_714">подробнее</p>
+                </span>
+                
+                <span class="personal_financial_position">
+                    <h2>Личное финансовое <br> положение</h2>
+                    <p class="v0_715">подробнее</p>
+                </span>
+            </div>
+
+            
+            <span class="why_work_text">Почему с нами стоит работать:</span>
+
+            <div class="why_work_container">
+                <div class="v0_658">
+                    <img src="../views/images/raise_of_money.png" alt="" width="170" height="170">
+                    <h2 class="v0_661">Финансовая <br> грамотность </h2>
+                    <p class="v0_672">Мы поможем вам <br> распределять ваш бюджет и <br> правильно пользоваться им.</p>
+                </div>
+                
+                <div class="v0_662">
+                    <img src="../views/images/phone_purchase.png" alt="" width="170" height="170">
+                    <h2 class="v0_665">Онлайн платежи</h2>
+                    <p class="v0_671">Возможность оплачивать <br> учебные сборы, столовые, <br> учебные материалы и <br> другие расходы онлайн.</p>
+                </div>
+                
+                <div class="v0_666">
+                    <img src="../views/images/credit_card.png" alt="" width="170" height="170">
+                    <h2 class="v0_669">Студенческие <br> кредиты</h2>
+                    <p class="v0_670">Мы  информируем и <br> упрощаем процесс <br> подачи заявок и делаем <br> их выгодными. </p>
+                </div>
+            </div>
+
+
+            <div class="add_info">
+                <div class="left_side_info">
+                    <h2 class="our_adress_text">Наш адрес:</h2>
+        
+                    <div class="choose_button">
+                        <p class="choose_city">Выберите город</p>
+                        <!-- <div class="name"></div> -->
+                    </div>
+                    
+                    <p class="address_text_format">Тараз, Пушкина 154</p>
+                    
+                    <p class="work_24">Работает круглосуточно!</p>
+                    
+                    <h2 class="contacts">Контакты:</h2>
+
+                    <p class="number_505">Для физических лиц ----- 505</p>
+                    
+                    <p class="number_605">Для бизнес клиентов ----- 605</p>
+
+                    <p class="ask_virtual_helper">Спросить у виртуального помощника</p>
+                </div>
+                <div id="map"></div>
+            </div>
+
+        </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script>
+        function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -34.397, lng: 150.644},
+            zoom: 8
+        });
+        }
+    </script>
+    </body>
+</html>
