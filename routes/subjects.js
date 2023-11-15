@@ -5,8 +5,8 @@ const Subjects = require("../models/Subjects");
 //add new subject
 router.post("/add", async (req, res) => {
   try {
-    const { name, price } = req.body;
-    const subject = new Subjects({ name, price });
+    const { name, price, code, teacher } = req.body;
+    const subject = new Subjects({ name, price, code, teacher });
     subject.save().then(res.status(200).json(subject));
   } catch (error) {
     console.log(error);
@@ -41,10 +41,12 @@ router.get("/", async (req, res) => {
 //get and modify it
 router.put("/:id", async (req, res) => {
   try {
-    const { name, price } = req.body;
+    const { name, price, code, teacher } = req.body;
     const subject = await Subjects.findByIdAndUpdate(req.params.id, {
       name,
       price,
+      code,
+      teacher,
     });
     await subject.save();
     res.status(200).json(subject);
@@ -56,7 +58,7 @@ router.put("/:id", async (req, res) => {
 //delete an subject by id
 router.delete("/:id", async (req, res) => {
   try {
-    if (req.params.id != null) {
+    if (req.params.id == null) {
       res.status(404).json({ message: "Id not found", success: false });
     } else {
       const subject = await Subjects.findByIdAndDelete(req.params.id);
