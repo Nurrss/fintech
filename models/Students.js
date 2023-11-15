@@ -3,26 +3,45 @@ const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
 const StudentsSchema = new Schema({
-  email: {
+  fullName: {
     type: String,
-    trim: true,
     required: true,
     unique: true,
-    lowercase: true,
   },
   password: {
     type: String,
+    required: true,
+    lowercase: true,
+    trim: true,
+  },
+  phoneNumber: {
+    type: String,
     trim: true,
     required: true,
   },
-  firstName: {
+  inn: {
     type: String,
     required: true,
+    trim: true,
   },
-  lastName: {
+  balans: {
     type: String,
-    required: true,
+    trim: true,
   },
+  status: {
+    type: String,
+    trim: true,
+  },
+  owes: {
+    type: String,
+    trim: true,
+  },
+  operations: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Operations",
+    },
+  ],
 });
 
 module.exports = mongoose.model("Students", StudentsSchema);
