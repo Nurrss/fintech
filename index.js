@@ -3,12 +3,14 @@ const morgan = require("morgan");
 const mongoose = require("mongoose");
 const studentsRoute = require("./routes/students");
 const subjectsRoute = require("./routes/subjects");
+const operationsRoute = require("./routes/operations");
 
 const app = express();
 
 app.use(morgan("common"));
 app.use(express.json());
 app.use("/students", studentsRoute);
+app.use("/operations", operationsRoute);
 app.use("/subjects", subjectsRoute);
 
 mongoose
