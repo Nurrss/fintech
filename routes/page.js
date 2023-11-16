@@ -9,6 +9,10 @@ router.get("/login", (req, res) => {
   res.render(createPath("login"));
 });
 
+router.get("/academic_credits", (req, res) => {
+  res.render(createPath("academic_credits"));
+});
+
 router.get("/registration", (req, res) => {
   res.render(createPath("registration"));
 });
