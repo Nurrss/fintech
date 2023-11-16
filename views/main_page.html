@@ -9,12 +9,14 @@
     </head>
     <body>
         <div class="container">
-            <div class="div-4">
-                <a href="../views/main_page.html" class="div-5">Главная</a>
-                <a href="../views/credits.html" class="div-5">Кредиты</a>
-                <a href="../views/budget.html" class="div-5">Бюджет</a>
-                <a href="" class="div-5">Платежи</a>
-                <a href="" class="div-5">Виртуальный помощник</a>
+            <div class="div-3">
+                <div class="div-4">
+                    <a style="border-bottom: 2px solid #27ae60;" href="../views/main_page.html" class="div-5">Главная</a>
+                    <a href="../views/credits.html" class="div-5">Кредиты</a>
+                    <a href="../views/budget.html" class="div-5">Бюджет</a>
+                    <a href="payments.html" class="div-5">Платежи</a>
+                    <a href="" class="div-5">Виртуальный помощник</a>
+                </div>
             </div>
                           
             <div class="welcome_container">
@@ -112,15 +114,59 @@
             </div>
 
         </div>
+        <div class="footer">
+            <div class="left_side_container">
+                <h1>Мы в соц. сетях:</h1>
+                <div class="img_and_texts">
+                    <div class="telegram">
+                        <img src="../views/images/telegram (1) 1.png" alt="">
+                        <a href=""><p>bcc.kz</p></a>
+                    </div>
+                    <div class="instagram">
+                        <img src="../views/images/instagram (6) 1.png" alt="">
+                        <a href=""><p>bcc.kz</p></a>
+                    </div>
+                    <div class="virtual_helper_footer">
+                        <img src="../views/images/speech-bubble 1.png" alt="">
+                        <a href=""><p>Виртуальный помощник</p></a>
+                    </div>
+                </div>
+            </div>
+            <div class="right_side_container">
+                <div class="first_column_footer">
+                    <a href=""><p>Контакты</p></a>
+                    <a href=""><p>Профиль</p></a>
+                    <a href=""><p>Кредиты</p></a>
+                </div>
+                <div class="second_column_footer">
+                    <a href=""><p>Долги</p></a>
+                    <a href=""><p>Бюджеты</p></a>
+                    <a href=""><p>Платежи</p></a>
+                </div>
+            </div>
+        </div>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
     <script>
+        // function initMap() {
+        // var map = new google.maps.Map(document.getElementById('map'), {
+        //     center: {lat: -34.397, lng: 150.644},
+        //     zoom: 8
+        // });
+        // }
+
         function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: -34.397, lng: 150.644},
-            zoom: 8
-        });
-        }
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 42.912233, lng: 71.359731}, // Replace with actual coordinates
+        zoom: 15
+      });
+
+      var marker = new google.maps.Marker({
+        position: {lat: 42.912233, lng: 71.359731}, // Replace with actual coordinates
+        map: map,
+        title: 'Сбербанк, Taraz'
+      });
+    }
     </script>
     </body>
 </html>

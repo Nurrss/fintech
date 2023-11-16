@@ -21,10 +21,27 @@ body{
 
 canvas {
     position: absolute;
-    margin-top: 22.8rem;
+    margin-top: 25.5rem;
     margin-left: 12.3rem;
   }
 
+
+  .div-3 {
+    /* align-self: end; */
+    display: flex;
+    margin-right: -20px;
+    width: 1236px;
+    margin-top: 4rem;
+    max-width: 100%;
+    align-items: end;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  @media (max-width: 991px) {
+    .div-3 {
+      flex-wrap: wrap;
+    }
+  }
 
 .div-4 {
     width: 90%;
@@ -32,8 +49,8 @@ canvas {
     background-color: rgba(255,255,255,1);
     position: fixed;
     display: flex;
-    align-items: start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
   }
   @media (max-width: 991px) {
     .div-4 {
@@ -46,13 +63,17 @@ canvas {
     margin-top: 1rem;
     display: flex;
     margin-left: 50px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-decoration: none;
     color: #000;
   }
 
+  .div-5:hover {
+    border-bottom: 2px solid #27ae60;
+  }
+
 .content{
-    margin-top: 5rem;
+    margin-top: 1rem;
     display: flex;
     width: 100%;
     flex-direction: row;
