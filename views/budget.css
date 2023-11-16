@@ -203,7 +203,7 @@ input[type="checkbox"]{
 }
 
 .button_count{
-    width: 650px;
+    width: 620px;
     height: 3rem;
     border: none;
     background-color: rgba(39,174,96,1);
@@ -212,7 +212,7 @@ input[type="checkbox"]{
 }
 
 .button_pay{
-    width: 650px;
+    width: 620px;
     height: 3rem;
     border: none;
     background-color: rgba(39,174,96,1);
