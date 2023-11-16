@@ -3,6 +3,72 @@ const router = require("express").Router();
 const Operations = require("../models/Operations");
 const Students = require("../models/Students");
 const Subjects = require("../models/Subjects");
+const createPath = require("../helpers/create-path");
+
+router.get("/login", (req, res) => {
+  res.render(createPath("login"));
+});
+
+router.get("/registration", (req, res) => {
+  res.render(createPath("registration"));
+});
+
+router.get("/payments", (req, res) => {
+  res.render(createPath("payments"));
+});
+
+router.get("/bank_decision", (req, res) => {
+  res.render(createPath("bank_decision"));
+});
+
+router.get("/budget", (req, res) => {
+  res.render(createPath("budget"));
+});
+
+router.get("/completing", (req, res) => {
+  res.render(createPath("completing"));
+});
+
+router.get("/credits", (req, res) => {
+  res.render(createPath("credits"));
+});
+
+router.get("/diagram", (req, res) => {
+  res.render(createPath("diagram"));
+});
+
+router.get("/needed_documents", (req, res) => {
+  res.render(createPath("needed_documents"));
+});
+
+router.get("/proof_identity", (req, res) => {
+  res.render(createPath("proof_identity"));
+});
+
+router.get("/signing_documents", (req, res) => {
+  res.render(createPath("signing_documents"));
+});
+
+router.post("/", async (req, res) => {
+  console.log("here");
+  try {
+    const { fullName, password, phoneNumber, inn, balans, status, owes } =
+      req.body;
+    const student = new Students({
+      fullName,
+      password,
+      phoneNumber,
+      inn,
+      balans,
+      status,
+      owes,
+    });
+    await student.save();
+    res.status(200).redirect(createPath("login"));
+  } catch (error) {
+    console.log(error);
+  }
+});
 
 //add new operation
 router.post("/add", async (req, res) => {

@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Manrope"
+    />
     <link rel="stylesheet" href="registration.css" />
-    <title>Fintech</title>
+    <title>Регистрация</title>
   </head>
   <body>
     <div class="div">
@@ -25,36 +29,62 @@
                   <div class="div-9"><div class="div-10"></div></div>
                 </div>
                 <div class="column-3">
-                  <a href="../views/login.html"><div class="div-11"><div class="div-12">Вход</div></div></a>
-                  </a>
+                  <a href="/login"
+                    ><div class="div-11"><div class="div-12">Вход</div></div></a
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="column-4">
-          <div class="div-13">
+          <form
+            id="post-form"
+            method="post"
+            action="/registration/add"
+            class="div-13"
+          >
             <div class="div-14">Создать аккаунт</div>
             <div>
               <div class="div-16">
                 <!-- <img loading="lazy" srcset="..." class="img" /> -->
-                <input class="div-15" type="text" placeholder="Ф.И.О" />
+                <input
+                  class="div-15"
+                  type="text"
+                  placeholder="Ф.И.О"
+                  name="fullName"
+                />
               </div>
             </div>
             <div>
               <!-- <img loading="lazy" srcset="..." class="img-2" /> -->
-              <input class="div-17" type="text" placeholder="Номер телефона" />
+              <input
+                class="div-17"
+                type="text"
+                placeholder="Номер телефона"
+                name="phoneNumber"
+              />
             </div>
             <div>
               <div class="div-22">
                 <!-- <img loading="lazy" srcset="..." class="img-3" /> -->
-                <input class="div-21" type="text" placeholder="ИИН" />
+                <input
+                  class="div-21"
+                  type="text"
+                  placeholder="ИИН"
+                  name="inn"
+                />
               </div>
             </div>
             <div>
               <div>
                 <!-- <img loading="lazy" srcset="..." class="img-4" /> -->
-                <input class="div-25" type="password" placeholder="Пароль" />
+                <input
+                  class="div-25"
+                  type="password"
+                  placeholder="Пароль"
+                  name="password"
+                />
               </div>
             </div>
             <div class="div-29">
@@ -66,39 +96,55 @@
               />
               <label for="checkbox1">Запомни меня</label>
             </div>
-           <button class="div-32" onclick="showPopup()">Зарегистрироваться</button>
-          </div>
+            <input
+              class="div-32"
+              onclick="showPopup()"
+              type="submit"
+              value="Зарегистрироваться"
+            />
+          </form>
         </div>
       </div>
     </div>
     <div id="popup-container" class="popup">
-      <h2>Verification</h2>
-      <p>
-        Enter the verification code sent to your phone:
-      </p>
-      <div class="verification-inputs">
-        <input type="text" maxlength="1" />
-        <input type="text" maxlength="1" />
-        <input type="text" maxlength="1" />
-        <input type="text" maxlength="1" />
+      <div class="popup_inside_container">
+        <h2>Верификация</h2>
+        <p>
+          Пожалуйста введите код, который <br />
+          мы отправили на ваш номер
+        </p>
+        <div class="verification-inputs">
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+          <input type="text" maxlength="1" />
+        </div>
+        <a href="/login"
+          ><button onclick="sendVerificationCode(); closePopup()">
+            Отправить
+          </button></a
+        >
+        <!-- <button onclick="closePopup()">Close</button> -->
       </div>
-      <a href="../views/login.html"><button onclick="sendVerificationCode(); closePopup()">Send</button></a>
-      <!-- <button onclick="closePopup()">Close</button> -->
     </div>
-    
+
     <script>
+      const path = require("path");
+
+      const createPath = (page) =>
+        path.resolve(__dirname, "ejs-views", `${page}.ejs`);
       function showPopup() {
-        document.getElementById('popup-container').style.display = 'block';
+        document.getElementById("popup-container").style.display = "block";
       }
-    
+
       function closePopup() {
-        document.getElementById('popup-container').style.display = 'none';
+        document.getElementById("popup-container").style.display = "none";
       }
 
       function sendVerificationCode() {
-    // Add your logic to handle the verification code and sending it
-    alert('Verification code sent!'); // You can replace this with your actual logic
-  }
+        // Add your logic to handle the verification code and sending it
+        alert("Verification code sent!"); // You can replace this with your actual logic
+      }
     </script>
   </body>
 </html>
