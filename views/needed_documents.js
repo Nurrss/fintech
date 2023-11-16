@@ -4,6 +4,7 @@ function showPopup() {
     document.getElementById('loading_popup_container').style.display = 'block';
     document.querySelector('.container').style.opacity = 0.3;
     setTimeout(closePopup, time); 
+    document.querySelector('.documents_checkbox').src = "../views/images/checked_checkbox.png"
     }
 
     function closePopup() {

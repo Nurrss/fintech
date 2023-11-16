@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="styleLink" rel="stylesheet" href="virtual_helper.css">
+    <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet" />
+    <title>Virtual Helper</title>
+</head>
+<body>
+    <div class="container">
+        <div class="div-3">
+            <div class="div-4">
+                <a href="../views/main_page.html" class="div-5">Главная</a>
+                <a href="../views/credits.html" class="div-5">Кредиты</a>
+                <a style="border-bottom: 2px solid #27ae60;" href="../views/budget.html" class="div-5">Бюджет</a>
+                <a href="" class="div-5">Платежи</a>
+                <a href="" class="div-5">Виртуальный помощник</a>
+            </div>
+        </div>
+        
+        <h1>Виртуальный помощник</h1>
+        <div class="chatting_header">
+            <h3 style="border-bottom: 3px solid rgba(39,174,96,1);">FAQ's</h3>
+            <h3 onclick="">Чат с помощником</h3>
+            <h3 onclick="">Контакты</h3>
+        </div>
+
+        <div class="content">
+            <div class="credit_question">
+                <div style="background-color: #fff;" class="question1">
+                    <p>Как оформить кредит?</p>
+                    <img onclick="giveAnswer()" class="non_clicked_plus1" src="../views/images/non_clicked_plus.png" alt="">
+                </div>
+                <div style="background-color: #fff;" class="answerContainer1">
+                    <p class="credit_answer"></p>
+                </div>
+            </div>
+            <div class="pay_question">
+                <div style="background-color: #fff;" class="question2">
+                    <p>Можем ли мы оплачивать обучения на этом веб-сайте?</p>
+                    <img onclick="giveAnswer2()" class="non_clicked_plus2" src="../views/images/non_clicked_plus.png" alt="">
+                </div>
+                <div style="background-color: #fff;" class="answerContainer2">
+                    <p class="pay_answer"></p>
+                </div>
+            </div>
+            <div class="add_card_question">
+                <div style="background-color: #fff;" class="question3">
+                    <p>Как добавить новую карту?</p>
+                    <img onclick="giveAnswer3()" class="non_clicked_plus3" src="../views/images/non_clicked_plus.png" alt="">
+                </div>
+                <div style="background-color: #fff;" class="answerContainer3">
+                    <p class="add_card_answer"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="left_side_container">
+            <h1>Мы в соц. сетях:</h1>
+            <div class="img_and_texts">
+                <div class="telegram">
+                    <img src="../views/images/telegram (1) 1.png" alt="">
+                    <a href=""><p>bcc.kz</p></a>
+                </div>
+                <div class="instagram">
+                    <img src="../views/images/instagram (6) 1.png" alt="">
+                    <a href=""><p>bcc.kz</p></a>
+                </div>
+                <div class="virtual_helper_footer">
+                    <img src="../views/images/speech-bubble 1.png" alt="">
+                    <a href=""><p>Виртуальный помощник</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="right_side_container">
+            <div class="first_column_footer">
+                <a href=""><p>Контакты</p></a>
+                <a href=""><p>Профиль</p></a>
+                <a href=""><p>Кредиты</p></a>
+            </div>
+            <div class="second_column_footer">
+                <a href=""><p>Долги</p></a>
+                <a href=""><p>Бюджеты</p></a>
+                <a href=""><p>Платежи</p></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+function giveAnswer() {
+    document.querySelector('.credit_answer').innerHTML = `
+        Чтобы оформить кредит вам нужно перейти на страницу "Кредиты". Там вы можете выбрать сумму которую хотите оформить в кредит и выполнить пару действий ради получение кредита в свой счет. 
+    `;
+
+    document.querySelector('.non_clicked_plus1').src = '../views/images/clicked_plus.png';
+
+    document.querySelector('.non_clicked_plus1').addEventListener('click', hideAnswer);
+
+    document.querySelector('.answerContainer1').className = 'answer_container1';
+
+    document.querySelector('.question1').style = "background-color: #58C988; box-shadow: ''"
+
+    document.querySelector('.answer_container1').style = "background-color: #27AE60; box-shadow: color: #fff''"
+}
+
+function hideAnswer() {
+    document.querySelector('.credit_answer').innerHTML = '';
+
+    document.querySelector('.non_clicked_plus1').src = '../views/images/non_clicked_plus.png';
+
+    document.querySelector('.non_clicked_plus1').addEventListener('click', giveAnswer);;
+
+    document.querySelector('.answer_container1').className = 'answerContainer1';
+
+    document.querySelector('.question1').style = "background-color: #fff; box-shadow: 10px 0 10px -10px #000, 0 10px 10px -10px #000, 0 -5px 10px -10px #000, -10px 0 10px -10px #000;"
+
+    document.querySelector('.answerContainer1').style = 'background-color: #fff;';
+}
+
+function giveAnswer2() {
+    document.querySelector('.pay_answer').innerHTML = `
+    Да, вы можете. Единственное, что вам следует сделать, это перейти на страницу "платежи". Там вы можете увидеть список расходов университета. Вы можете сделать это, нажав кнопку оплатить, не открывая другие приложения.
+    `;
+
+    document.querySelector('.non_clicked_plus2').src = '../views/images/clicked_plus.png';
+
+    document.querySelector('.non_clicked_plus2').addEventListener('click', hideAnswer2);
+
+    document.querySelector('.answerContainer2').className = 'answer_container2';
+
+    document.querySelector('.question2').style = "background-color: #58C988; box-shadow: ''"
+
+    document.querySelector('.answer_container2').style = "background-color: #27AE60; box-shadow: ''"
+}
+
+function hideAnswer2() {
+    document.querySelector('.pay_answer').innerHTML = '';
+
+    document.querySelector('.non_clicked_plus2').src = '../views/images/non_clicked_plus.png';
+
+    document.querySelector('.non_clicked_plus2').addEventListener('click', giveAnswer2);;
+
+    document.querySelector('.answerContainer2').className = 'answer_container2';
+
+    document.querySelector('.question2').style = "background-color: #fff; box-shadow: 10px 0 10px -10px #000, 0 10px 10px -10px #000, 0 -5px 10px -10px #000, -10px 0 10px -10px #000;"
+
+    document.querySelector('.answerContainer2').style = 'background-color: #fff;';
+}
+
+function giveAnswer3() {
+    document.querySelector('.add_card_answer').innerHTML = `
+    Да, вы можете. Единственное, что вам следует сделать, это перейти на страницу "платежи". Там вы можете увидеть список расходов университета. Вы можете сделать это, нажав кнопку оплатить, не открывая другие приложения.
+    `;
+
+    document.querySelector('.non_clicked_plus3').src = '../views/images/clicked_plus.png';
+
+    document.querySelector('.answerContainer3').className = 'answer_container3';
+
+    document.querySelector('.question3').style = "background-color: #58C988; box-shadow: ''"
+
+    document.querySelector('.answer_container3').style = "background-color: #27AE60; box-shadow: ''"
+}
+
+
+
+function rechangeContent() {
+    document.querySelector('.container').innerHTML = `
+    
+    `;
+    
+    document.getElementById('styleLink').href = '';
+}
+    </script>
+</body>
+</html>
