@@ -8,17 +8,16 @@
   </head>
   <body>
     <div class="div">
-      <div class="div-2">
-        <div class="div-3">
-          <div class="div-4">
-            <a href="../views/main_page.html" class="div-5">Главная</a>
-            <a href="../views/credits.html" class="div-5">Кредиты</a>
-            <a href="../budget" class="div-5">Бюджет</a>
-            <a href="" class="div-5">Платежи</a>
-            <a href="" class="div-5">Виртуальный помощник</a>
-          </div>
+      <div class="div-3">
+        <div class="div-4">
+          <a href="../views/main_page.html" class="div-5">Главная</a>
+          <a style="border-bottom: 2px solid #27ae60;" href="../views/credits.html" class="div-5">Кредиты</a>
+          <a href="../budget" class="div-5">Бюджет</a>
+          <a href="payments.html" class="div-5">Платежи</a>
+          <a href="" class="div-5">Виртуальный помощник</a>
         </div>
-
+      </div>
+      <div class="div-2">
         <div class="div-9">Калькулятор</div>
         <div class="div-10">
           <div class="div-11">
@@ -40,7 +39,7 @@
             <div class="div-16">
               <div class="div-17">
                 <div class="column">
-                  <span class="div-18" id="volume-value">100000KZT</span>
+                  <input class="div-18" id="volume-value" type="text" placeholder="0 KZT">
                 </div>
                 <div class="column-2">
                   <div class="div-19">
@@ -83,50 +82,40 @@
           <div class="div-38">60</div>
         </div>
       </div>
-      <div class="div-39">
-        <div class="div-40">
-          <div class="div-41">
-            <div class="div-42">
-              <div class="div-43">
-                <div class="div-44">Мы в соц. сетях:</div>
-                <!-- <img loading="lazy" srcset="..." class="img" /> -->
-                <div class="div-45">bcc.kz</div>
-              </div>
-              <div class="div-46">
-                <div class="div-47">
-                  <!-- <img loading="lazy" srcset="..." class="img-3" /> -->
-                  <div class="div-48">bcc.kz</div>
-                </div>
-                <div class="div-49">
-                  <!-- <img loading="lazy" srcset="..." class="img-4" /> -->
-                  <div class="div-50">Виртуальный помощник</div>
-                  <!-- <img
-                    loading="lazy"
-                    src="https://cdn.builder.io/api/v1/image/assets/TEMP/88b17bb3-a54c-41ca-bfd6-0cf1f7a0c3ae?"
-                    class="img-5"
-                  /> -->
-                </div>
-              </div>
-            </div>
-            <div class="div-51">
-              <a href="">Контакты</a>
-              <br />
-              <a href="">Профиль</a>
-              <br />
-              <a href="">Кредиты</a>
-            </div>
-            <div class="div-52">
-              <a href="">Долги</a>
-              <br />
-              <a href="">Бюджеты</a>
-              <br />
-              <a href="">Платежи</a>
-              <br />
-            </div>
-          </div>
-        </div>
-      </div>
+      
     </div>
+    
+    <div class="footer">
+      <div class="left_side_container">
+          <h1>Мы в соц. сетях:</h1>
+          <div class="img_and_texts">
+              <div class="telegram">
+                  <img src="../views/images/telegram (1) 1.png" alt="">
+                  <a href=""><p>bcc.kz</p></a>
+              </div>
+              <div class="instagram">
+                  <img src="../views/images/instagram (6) 1.png" alt="">
+                  <a href=""><p>bcc.kz</p></a>
+              </div>
+              <div class="virtual_helper_footer">
+                  <img src="../views/images/speech-bubble 1.png" alt="">
+                  <a href=""><p>Виртуальный помощник</p></a>
+              </div>
+          </div>
+      </div>
+      <div class="right_side_container">
+          <div class="first_column_footer">
+              <a href=""><p>Контакты</p></a>
+              <a href=""><p>Профиль</p></a>
+              <a href=""><p>Кредиты</p></a>
+          </div>
+          <div class="second_column_footer">
+              <a href=""><p>Долги</p></a>
+              <a href=""><p>Бюджеты</p></a>
+              <a href=""><p>Платежи</p></a>
+          </div>
+      </div>
+  </div>
     <script src="/views/script.js"></script>
   </body>
 </html>

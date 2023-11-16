@@ -14,7 +14,7 @@
                     <a style="border-bottom: 2px solid #27ae60;" href="../views/main_page.html" class="div-5">Главная</a>
                     <a href="../views/credits.html" class="div-5">Кредиты</a>
                     <a href="../views/budget.html" class="div-5">Бюджет</a>
-                    <a href="" class="div-5">Платежи</a>
+                    <a href="payments.html" class="div-5">Платежи</a>
                     <a href="" class="div-5">Виртуальный помощник</a>
                 </div>
             </div>
@@ -148,12 +148,25 @@
 
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
     <script>
+        // function initMap() {
+        // var map = new google.maps.Map(document.getElementById('map'), {
+        //     center: {lat: -34.397, lng: 150.644},
+        //     zoom: 8
+        // });
+        // }
+
         function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: -34.397, lng: 150.644},
-            zoom: 8
-        });
-        }
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: 42.912233, lng: 71.359731}, // Replace with actual coordinates
+        zoom: 15
+      });
+
+      var marker = new google.maps.Marker({
+        position: {lat: 42.912233, lng: 71.359731}, // Replace with actual coordinates
+        map: map,
+        title: 'Сбербанк, Taraz'
+      });
+    }
     </script>
     </body>
 </html>
