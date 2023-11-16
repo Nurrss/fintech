@@ -21,9 +21,9 @@
         
         <h1>Виртуальный помощник</h1>
         <div class="chatting_header">
-            <h3 style="border-bottom: 3px solid rgba(39,174,96,1);">FAQ's</h3>
-            <h3 onclick="">Чат с помощником</h3>
-            <h3 onclick="">Контакты</h3>
+            <h3 class="faq_menu" style="border-bottom: 3px solid rgba(39,174,96,1);" onclick="jumpToFAQ()">FAQ's</h3>
+            <h3 class="chat_menu" style="color: #000;" onclick="jumpToChat()">Чат с помощником</h3>
+            <h3 class="contacts_menu" style="color: #000;" onclick="jumpToContacts()">Контакты</h3>
         </div>
 
         <div class="content">
@@ -54,6 +54,9 @@
                     <p class="add_card_answer"></p>
                 </div>
             </div>
+        </div>
+        <div class="content2">
+            
         </div>
     </div>
     <div class="footer">
@@ -101,9 +104,9 @@ function giveAnswer() {
 
     document.querySelector('.answerContainer1').className = 'answer_container1';
 
-    document.querySelector('.question1').style = "background-color: #58C988; box-shadow: ''"
+    document.querySelector('.question1').style = "background-color: #58C988; color: #fff; box-shadow: ''"
 
-    document.querySelector('.answer_container1').style = "background-color: #27AE60; box-shadow: color: #fff''"
+    document.querySelector('.answer_container1').style = "background-color: #27AE60; color: #fff; box-shadow: color: #fff''"
 }
 
 function hideAnswer() {
@@ -115,9 +118,9 @@ function hideAnswer() {
 
     document.querySelector('.answer_container1').className = 'answerContainer1';
 
-    document.querySelector('.question1').style = "background-color: #fff; box-shadow: 10px 0 10px -10px #000, 0 10px 10px -10px #000, 0 -5px 10px -10px #000, -10px 0 10px -10px #000;"
+    document.querySelector('.question1').style = "background-color: #fff; box-shadow: 10px 0 10px -10px #000, 0 10px 10px -10px #000, 0 -5px 10px -10px #000, -10px 0 10px -10px #000; color: #000;"
 
-    document.querySelector('.answerContainer1').style = 'background-color: #fff;';
+    document.querySelector('.answerContainer1').style = 'background-color: #fff; color: #000;';
 }
 
 function giveAnswer2() {
@@ -131,9 +134,9 @@ function giveAnswer2() {
 
     document.querySelector('.answerContainer2').className = 'answer_container2';
 
-    document.querySelector('.question2').style = "background-color: #58C988; box-shadow: ''"
+    document.querySelector('.question2').style = "background-color: #58C988; color: #fff; box-shadow: ''"
 
-    document.querySelector('.answer_container2').style = "background-color: #27AE60; box-shadow: ''"
+    document.querySelector('.answer_container2').style = "background-color: #27AE60; color: #fff; box-shadow: ''"
 }
 
 function hideAnswer2() {
@@ -143,11 +146,11 @@ function hideAnswer2() {
 
     document.querySelector('.non_clicked_plus2').addEventListener('click', giveAnswer2);;
 
-    document.querySelector('.answerContainer2').className = 'answer_container2';
+    document.querySelector('.answer_container2').className = 'answerContainer2';
 
-    document.querySelector('.question2').style = "background-color: #fff; box-shadow: 10px 0 10px -10px #000, 0 10px 10px -10px #000, 0 -5px 10px -10px #000, -10px 0 10px -10px #000;"
+    document.querySelector('.question2').style = "background-color: #fff; box-shadow: 10px 0 10px -10px #000, 0 10px 10px -10px #000, 0 -5px 10px -10px #000, -10px 0 10px -10px #000; color: #000;"
 
-    document.querySelector('.answerContainer2').style = 'background-color: #fff;';
+    document.querySelector('.answerContainer2').style = 'background-color: #fff; color: #000;';
 }
 
 function giveAnswer3() {
@@ -157,22 +160,189 @@ function giveAnswer3() {
 
     document.querySelector('.non_clicked_plus3').src = '../views/images/clicked_plus.png';
 
+    document.querySelector('.non_clicked_plus3').addEventListener('click', hideAnswer3);
+
     document.querySelector('.answerContainer3').className = 'answer_container3';
 
-    document.querySelector('.question3').style = "background-color: #58C988; box-shadow: ''"
+    document.querySelector('.question3').style = "background-color: #58C988; color: #fff; box-shadow: ''"
 
-    document.querySelector('.answer_container3').style = "background-color: #27AE60; box-shadow: ''"
+    document.querySelector('.answer_container3').style = "background-color: #27AE60; color: #fff; box-shadow: ''"
 }
 
+function hideAnswer3() {
+    document.querySelector('.add_card_answer').innerHTML = '';
 
+    document.querySelector('.non_clicked_plus3').src = '../views/images/non_clicked_plus.png';
 
-function rechangeContent() {
-    document.querySelector('.container').innerHTML = `
-    
+    document.querySelector('.non_clicked_plus3').addEventListener('click', giveAnswer3);;
+
+    document.querySelector('.answer_container3').className = 'answerContainer3';
+
+    document.querySelector('.question3').style = "background-color: #fff; box-shadow: 10px 0 10px -10px #000, 0 10px 10px -10px #000, 0 -5px 10px -10px #000, -10px 0 10px -10px #000; color: #000;"
+
+    document.querySelector('.answerContainer3').style = 'background-color: #fff; color: #000;';
+}
+
+function jumpToFAQ() {
+    document.querySelector('.content').innerHTML = `
+    <div class="credit_question">
+                <div style="background-color: #fff;" class="question1">
+                    <p>Как оформить кредит?</p>
+                    <img onclick="giveAnswer()" class="non_clicked_plus1" src="../views/images/non_clicked_plus.png" alt="">
+                </div>
+                <div style="background-color: #fff;" class="answerContainer1">
+                    <p class="credit_answer"></p>
+                </div>
+            </div>
+            <div class="pay_question">
+                <div style="background-color: #fff;" class="question2">
+                    <p>Можем ли мы оплачивать обучения на этом веб-сайте?</p>
+                    <img onclick="giveAnswer2()" class="non_clicked_plus2" src="../views/images/non_clicked_plus.png" alt="">
+                </div>
+                <div style="background-color: #fff;" class="answerContainer2">
+                    <p class="pay_answer"></p>
+                </div>
+            </div>
+            <div class="add_card_question">
+                <div style="background-color: #fff;" class="question3">
+                    <p>Как добавить новую карту?</p>
+                    <img onclick="giveAnswer3()" class="non_clicked_plus3" src="../views/images/non_clicked_plus.png" alt="">
+                </div>
+                <div style="background-color: #fff;" class="answerContainer3">
+                    <p class="add_card_answer"></p>
+                </div>
+            </div>
     `;
     
-    document.getElementById('styleLink').href = '';
+    document.getElementById('styleLink').href = 'virtual_helper.css';
+    document.querySelector('.contacts_menu').style = 'border-bottom: ""';
+    document.querySelector('.faq_menu').style = 'border-bottom: 2px solid #27ae60;';
+    document.querySelector('.chat_menu').style = 'border-bottom: ""';
 }
-    </script>
+
+function jumpToContacts() {
+    document.querySelector('.content').innerHTML = `
+    <h2>Инфо</h2>
+            <div class="whatsapp">
+                <div class="img_and_text">
+                    <img src="../views/images/whatsapp.png" alt="">
+                    <p>+7(747)1012685</p>
+                </div>
+                <a href="https://wa.me/+77077287558?text=Hello%20World"><img class="next_icon" src="../views/images/next_icon.png" alt=""></a>
+            </div>
+            <div class="facebook_chat_bot">
+                <div class="img_and_text">
+                    <img src="../views/images/facebook.png" alt="">
+                    <p>Facebook чат-бот</p>
+                </div>
+                <a href="#"><img class="next_icon" src="../views/images/next_icon.png" alt=""></a>
+            </div>
+            <div class="telegram_chat_bot">
+                <div class="img_and_text">
+                    <img src="../views/images/telegram.png" alt="">
+                    <p>Telegram чат-бот</p>
+                </div>
+                <a href="#"><img class="next_icon" src="../views/images/next_icon.png" alt=""></a>
+            </div>
+            <div class="vk_chat_bot">
+                <div class="img_and_text">
+                    <img src="../views/images/vk.png" alt="">
+                    <p>Вконтакте чат-бот</p>
+                </div>
+                <a href="#"><img class="next_icon" src="../views/images/next_icon.png" alt=""></a>
+            </div>
+    `;
+    
+    document.getElementById('styleLink').href = 'contacts.css';
+    document.querySelector('.contacts_menu').style = 'border-bottom: 2px solid #27ae60;';
+    document.querySelector('.faq_menu').style = 'border-bottom: ""';
+    document.querySelector('.chat_menu').style = 'border-bottom: ""';
+}
+
+function jumpToChat() {
+    document.querySelector('.content').innerHTML = `
+    <div id="chatContainer"></div>
+  <div class="question_input">
+    <input type="text" id="questionInput" placeholder="Type your question...">
+    <label for="questionInput">
+        <img onclick="getAnswer()" src="../views/images/send 1.png" alt="">
+    </label>
+  </div>
+    `;
+    
+    document.getElementById('styleLink').href = 'chatgpt.css';
+    document.querySelector('.contacts_menu').style = 'border-bottom: ""';
+    document.querySelector('.faq_menu').style = 'border-bottom: ""';
+    document.querySelector('.chat_menu').style = 'border-bottom: 2px solid #27ae60;';
+}
+
+
+const chatHistory = [];
+
+  function getAnswer() {
+    const questionInput = document.getElementById('questionInput');
+    const chatContainer = document.getElementById('chatContainer');
+    const question = questionInput.value.trim();
+
+    if (question === '') {
+      alert('Please enter a question.');
+      return;
+    }
+
+    // Replace this with your own logic to get answers based on the user's question
+    const answer = getPredefinedAnswer(question);
+
+    // const timeStamp = new Date();
+    // const hours = timeStamp.getHours().toString().padStart(2, '0');
+    // const minutes = timeStamp.getMinutes().toString().padStart(2, '0');
+
+    // Add the current question and answer to chat history
+    chatHistory.push({ question, answer });
+
+    // Display the chat history
+    displayChatHistory(chatContainer);
+
+    // Clear the input field
+    questionInput.value = '';
+  }
+
+  function getPredefinedAnswer(question) {
+    // Replace this with your own logic to map questions to predefined answers
+    const answers = {
+      'your name': 'I am a virtual assistant.',
+      'who are you': 'I am a virtual assistant.',
+      'contact': 'Please visit our contact page.',
+      // Add more predefined questions and answers here
+    };
+
+    // Check for keyword matches
+    for (const keyword in answers) {
+      if (question.toLowerCase().includes(keyword)) {
+        return answers[keyword];
+      }
+    }
+
+    return 'I don\'t have an answer to that question. Please contact us for assistance.';
+  }
+
+  function displayChatHistory(container) {
+    container.innerHTML = '';
+
+    // Display each question and answer in the chat history
+    chatHistory.forEach(({ question, answer }) => {
+      container.innerHTML += `<p class="user_questions">${question}</p>`;
+      container.innerHTML += `<p class="user_questions_time">${getFormattedTime()}</p>`;
+      container.innerHTML += `<p class="assistent_answers">${answer}</p>`;
+      container.innerHTML += `<p class="assistent_answers_time">${getFormattedTime()}</p>`;
+    });
+  }
+
+  function getFormattedTime() {
+    const now = new Date();
+    const hours = now.getHours().toString().padStart(2, '0');
+    const minutes = now.getMinutes().toString().padStart(2, '0');
+    return `${hours}:${minutes}`;
+  }
+</script>
 </body>
 </html>
