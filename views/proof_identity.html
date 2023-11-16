@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="proof_identity.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope">
+    <title>Потверждение личности</title>
+    <script class="head_script1" defer src="face-api.min.js"></script>
+    <script class="head_script2" defer src="video_function.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="div-3">
+            <div class="div-4">
+                <a href="../views/main_page.html" class="div-5">Главная</a>
+                <a style="border-bottom: 2px solid #27ae60;" href="../views/credits.html" class="div-5">Кредиты</a>
+                <a href="../views/budget.html" class="div-5">Бюджет</a>
+                <a href="" class="div-5">Платежи</a>
+                <a href="" class="div-5">Виртуальный помощник</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left_side_container">
+                <h1>Онлайн-заявка на выдачу <br> академического кредита</h1>
+                <div class="credit_data">
+                    <img src="../views/images/checked_checkbox.png" alt="">
+                    <h2>Данные о кредите</h2>
+                </div>
+                <div class="identity_proof">
+                    <img src="../views/images/unchecked_checkbox.png" alt="">
+                    <h2>Потверждение <br> личности</h2>
+                </div>
+                <div class="documents">
+                    <img src="../views/images/unchecked_checkbox.png" alt="">
+                    <h2>Документы</h2>
+                </div>
+                <div class="credit_available">
+                    <img src="../views/images/unchecked_checkbox.png" alt="">
+                    <h2>Кредитоспособность</h2>
+                </div>
+                <div class="bank_decision">
+                    <img src="../views/images/unchecked_checkbox.png" alt="">
+                    <h2>Решение банка</h2>
+                </div>
+                <div class="signings_documents">
+                    <img src="../views/images/unchecked_checkbox.png" alt="">
+                    <h2>Подписание документов</h2>
+                </div>
+                <div class="completion">
+                    <img src="../views/images/unchecked_checkbox.png" alt="">
+                    <h2>Завершение</h2>
+                </div>
+            </div>
+            <div class="right_side_container">
+                <h2>Потверждение личности</h2>
+                <p>Поместите лицо в рамку и посмотрите в камеру. Снимите <br> головной убор или маску.</p>
+                <div class="document-container">
+                    <span></span>
+                    <video id="video" width="385" height="300" autoplay muted></video>
+                    <a href="../views/needed_documents.html"><button class="attach-button" onclick="jumpToNeededDocuments()">Сделать снимок</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
