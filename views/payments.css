@@ -25,10 +25,11 @@
   }
 }
 .div-3 {
-  align-self: end;
+  /* align-self: end; */
   display: flex;
   margin-right: -20px;
-  width: 1236px;
+  width: 1600px;
+  margin-top: 4rem;
   max-width: 100%;
   align-items: end;
   justify-content: space-between;
@@ -39,13 +40,17 @@
     flex-wrap: wrap;
   }
 }
+
 .div-4 {
+  z-index: 5;
+  width: 100%;
+  margin-top: 7rem;
+  height: 4rem;
+  background-color: rgba(255,255,255,1);
+  position: fixed;
   display: flex;
-  margin-top: 8px;
-  align-items: start;
-  justify-content: space-between;
-  margin-left: 32px;
-  gap: 12px;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width: 991px) {
   .div-4 {
@@ -55,6 +60,7 @@
   }
 }
 .div-5 {
+  margin-top: 1rem;
   display: flex;
   margin-left: 50px;
   font-size: 1.2rem;
@@ -503,7 +509,7 @@
   background-color: #f2f2f2;
   flex-grow: 1;
   align-items: center;
-  padding: 18px 51px;
+  padding: 18px 40px;
   font: 400 20px Manrope, sans-serif;
   margin-top: 67px;
   height: 56px;
@@ -515,19 +521,19 @@
 }
 .div-38 {
   color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  background-color: #27ae60;
-  flex-grow: 1;
-  align-items: center;
-  padding: 14px 160px;
-  border: none;
-  cursor: pointer;
-  font: 400 20px Manrope, sans-serif;
-  margin-top: 67px;
-  height: 56px;
-  width: 415px;
-  margin-left: 20px;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #27ae60;
+    flex-grow: 1;
+    align-items: center;
+    padding: 14px 144px;
+    border: none;
+    cursor: pointer;
+    font: 400 20px Manrope, sans-serif;
+    margin-top: 67px;
+    height: 56px;
+    width: 420px;
+    margin-left: 20px;
 }
 @media (max-width: 991px) {
   .div-38 {
@@ -567,7 +573,7 @@
   align-self: start;
   white-space: nowrap;
   font: 800 32px Manrope, sans-serif;
-  margin-right: -66px;
+  margin-right: -18px;
 }
 @media (max-width: 991px) {
   .div-41 {
@@ -1057,7 +1063,7 @@
 }
 .div-76 {
   display: flex;
-  width: 64%;
+  width: 73%;
   margin-top: 115px;
   margin-left: -55px;
   flex-direction: column;
@@ -1072,7 +1078,7 @@
   white-space: nowrap;
   background-color: #f2f2f2;
   align-items: center;
-  padding: 16px 34px;
+  padding: 16px 22px;
   font: 400 20px Manrope, sans-serif;
 }
 @media (max-width: 991px) {
@@ -1086,7 +1092,7 @@
   background-color: #f2f2f2;
   margin-top: 30px;
   align-items: center;
-  padding: 16px 34px;
+  padding: 16px 22px;
   font: 400 20px Manrope, sans-serif;
 }
 @media (max-width: 991px) {
@@ -1101,7 +1107,7 @@
   background-color: #f2f2f2;
   margin-top: 35px;
   align-items: center;
-  padding: 16px 34px;
+  padding: 16px 22px;
   font: 400 20px Manrope, sans-serif;
 }
 @media (max-width: 991px) {
@@ -1231,7 +1237,7 @@
   flex-grow: 1;
   flex-basis: 0%;
   flex-direction: column;
-  margin-left: 28px;
+  margin-left: 114px;
 }
 .div-91 {
   width: calc(42% + 8px);
@@ -1241,7 +1247,7 @@
   white-space: nowrap;
   background-color: #f2f2f2;
   align-items: center;
-  padding: 16px 34px;
+  padding: 16px 22px;
   font: 400 20px Manrope, sans-serif;
 }
 @media (max-width: 991px) {
@@ -1258,7 +1264,7 @@
   background-color: #f2f2f2;
   margin-top: 29px;
   align-items: center;
-  padding: 16px 34px;
+  padding: 16px 22px;
   font: 400 20px Manrope, sans-serif;
 }
 @media (max-width: 991px) {
@@ -1409,7 +1415,7 @@
   align-self: end;
   display: flex;
   margin-top: 31px;
-  margin-right: 487px;
+  margin-right: 370px;
   width: 387px;
   max-width: 100%;
   flex-direction: column;
@@ -1544,13 +1550,13 @@
 }
 .div-110 {
   box-shadow: rgba(39, 174, 96, 0.5) 0px 2px 10px 7px;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  width: 724px;
-  max-width: 100%;
-  flex-direction: column;
-  margin: 44px 0px 0px 492px;
-  padding: 50px 80px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    width: 724px;
+    max-width: 100%;
+    flex-direction: column;
+    margin: -24px 0px 0px 436px;
+    padding: 50px 80px;
 }
 @media (max-width: 991px) {
   .div-110 {
@@ -1847,7 +1853,7 @@
   width: 798px;
   max-width: 100%;
   flex-direction: column;
-  margin: 64px 0 91px;
+  margin: 24px 0 91px;
   padding: 48px 54px;
 }
 @media (max-width: 991px) {

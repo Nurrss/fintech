@@ -27,7 +27,7 @@ a{
   display: flex;
   margin-right: -20px;
   width: 1236px;
-  margin-top: 3rem;
+  margin-top: 4rem;
   max-width: 100%;
   align-items: end;
   justify-content: space-between;
@@ -72,7 +72,7 @@ a{
 
 
 .right-content {
-  text-align: right;
+  text-align: right; 
 }
 
 
@@ -367,6 +367,7 @@ a{
   justify-content: center;
   color: #fff;
   gap: 25rem;
+  padding-bottom: 2rem;
 }
 
 .footer a{
@@ -382,7 +383,7 @@ a{
 .img_and_texts{
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  /* gap: rem; */
 }
 
 .img_and_texts div{
@@ -408,11 +409,11 @@ a{
 .first_column_footer{
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  /* gap: 1.2rem; */
 }
 
 .second_column_footer{
   display: flex;
   flex-direction: column;
-  gap: 1.2rem;
+  /* gap: 1.2rem; */
 }
