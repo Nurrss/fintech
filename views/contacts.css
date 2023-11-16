@@ -13,7 +13,7 @@ body{
     padding: 0;
     /* display: flex;
     justify-content: center; */
-    font-family: Manrope;
+    font-family: 'Manrope';
     margin: 0;
     padding: 0;
 }
@@ -93,100 +93,7 @@ body{
     flex-direction: column;
 }
 
-.content div{
-    display: flex;
-    flex-direction: column;
-}
 
-.content div .question1{
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    /* gap: 10rem; */
-    background-color: #fff; box-shadow: 10px 0 10px -10px #000, 0 10px 10px -10px #000, 0 -5px 10px -10px #000, -10px 0 10px -10px #000; 
-    padding: 1rem 1rem;
-}
-
-.content div .question2{
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    /* gap: 10rem; */
-    background-color: #fff; box-shadow: 10px 0 10px -10px #000, 0 10px 10px -10px #000, 0 -5px 10px -10px #000, -10px 0 10px -10px #000; 
-    padding: 1rem 1rem;
-}
-
-.content div .question3{
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    /* gap: 10rem; */
-    background-color: #fff; box-shadow: 10px 0 10px -10px #000, 0 10px 10px -10px #000, 0 -5px 10px -10px #000, -10px 0 10px -10px #000; 
-    padding: 1rem 1rem;
-}
-
-.content div .answer_container1{
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    /* gap: 10rem; */
-    padding: 1rem 1rem;
-    margin-bottom: 1rem;
-}
-
-.content div .answer_container2{
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    /* gap: 10rem; */
-    padding: 1rem 1rem;
-    margin-bottom: 1rem;
-}
-
-.content div .answer_container3{
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    /* gap: 10rem; */
-    padding: 1rem 1rem;
-    margin-bottom: 1rem;
-}
-
-
-.content div img{
-    width: 2rem;
-    height: 2rem;
-}
-
-
-.button_container{
-    width: 95%;
-    margin-top: 4%;
-    display: flex;
-    flex-direction: row;
-    gap: 5%;
-}
-
-.count_container h2{
-    font-size: 2rem;
-}
-
-.count_container p{
-    font-size: 1.5rem;
-    margin-top: 1rem;
-}
 
 .footer{
     display: flex;
@@ -198,7 +105,7 @@ body{
     color: #fff;
     gap: 25rem;
     padding-bottom: 2rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
   
   .footer a{
@@ -249,6 +156,19 @@ body{
     /* gap: 1.2rem; */
   }
 
+
+  .content{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 10px -10px rgba(0, 0 , 0 , 1),
+                0 -10px 10px -10px rgba(0, 0 , 0 , 1),
+                10px 0 10px -10px rgba(0, 0 , 0 , 1),
+                -10px 0 10px -10px rgba(0, 0 , 0 , 1);
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+  }
+
   .whatsapp, 
   .facebook_chat_bot, 
   .telegram_chat_bot, 
@@ -274,3 +194,5 @@ body{
 .next_icon {
   height: 1.5rem;
 }
+
+
