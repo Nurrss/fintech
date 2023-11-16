@@ -16,9 +16,12 @@ function jumpToBankDecision() {
     document.getElementById('styleLink').href = 'bank_decision.css';
 
     document.getElementById('own_js_file').src = '';
+
+    document.querySelector('.credit_available_checkbox').src="../views/images/checked_checkbox.png"
     
     document.getElementById('loading_popup_container').innerHTML = '';
     }, 5000);
+
 }
 
 
@@ -44,6 +47,8 @@ document.getElementById('styleLink').href = 'signing_documents.css';
 
 document.getElementById('own_js_file').src = 'signing_documents.js';
 
+document.querySelector('.bank_decision_checkbox').src="../views/images/checked_checkbox.png";
+
 }
 
 
@@ -58,6 +63,8 @@ function jumpToCompleting () {
 document.getElementById('styleLink').href = 'completing.css';
 
 document.getElementById('own_js_file').src = '';
+
+document.querySelector('.signings_documents_checkbox').src="../views/images/checked_checkbox.png";
 }
 
 
