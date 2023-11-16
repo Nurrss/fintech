@@ -5,10 +5,10 @@ body {
   font-size: 14px;
   margin: 0;
   padding: 0;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -17,7 +17,7 @@ a{
   flex-direction: column;
   /* justify-content: center; */
   /* align-items: center; */
-  background: rgba(255,255,255,1);
+  background: rgba(255, 255, 255, 1);
   opacity: 1;
   overflow: hidden;
 }
@@ -44,7 +44,7 @@ a{
   width: 100%;
   margin-top: 7rem;
   height: 4rem;
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255, 255, 255, 1);
   position: fixed;
   display: flex;
   align-items: center;
@@ -70,11 +70,9 @@ a{
   border-bottom: 2px solid #27ae60;
 }
 
-
 .right-content {
-  text-align: right; 
+  text-align: right;
 }
-
 
 .welcome_container {
   display: flex;
@@ -87,12 +85,12 @@ a{
   overflow: hidden;
 }
 
-.left-content{
+.left-content {
   text-align: left;
 }
 
 .welcome_text {
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   top: 0px;
   left: 3px;
   font-weight: Bold;
@@ -113,8 +111,8 @@ a{
 .button {
   width: 250px;
   height: 70px;
-  background: rgba(39,174,96,1);
-  color: rgba(255,255,255,1);
+  background: rgba(39, 174, 96, 1);
+  color: rgba(255, 255, 255, 1);
   font-family: Manrope;
   font-size: 30px;
   opacity: 1;
@@ -138,7 +136,7 @@ a{
 
 .our-services {
   width: 449px;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   margin-top: 100px;
   font-weight: Bold;
   font-size: 3rem;
@@ -155,16 +153,27 @@ a{
   gap: 20px 20px;
 }
 
-.monitoring_budget {  background-image: url(../views/images/monitoring_budget.png);  }
-.educational_credit {  background-image: url(../views/images/educational\ credit.png); }
-.virtual_helper {  background-image: url(../views/images/virtual_helper.png); }
-.outcome_monitoring {  background-image: url(../views/images/outcome_monitoring.png); }
-.benefit_calculator {  background-image: url(../views/images/benefit_calculator.png); }
-.personal_financial_position {  background-image: url(../views/images/personal_financial_position.png);  }
-
+.monitoring_budget {
+  background-image: url(images/monitoring_budget.png);
+}
+.educational_credit {
+  background-image: url(images/educational\ credit.png);
+}
+.virtual_helper {
+  background-image: url(images/virtual_helper.png);
+}
+.outcome_monitoring {
+  background-image: url(images/outcome_monitoring.png);
+}
+.benefit_calculator {
+  background-image: url(images/benefit_calculator.png);
+}
+.personal_financial_position {
+  background-image: url(images/personal_financial_position.png);
+}
 
 .educational_credit,
-.virtual_helper, 
+.virtual_helper,
 .monitoring_budget,
 .benefit_calculator,
 .outcome_monitoring,
@@ -173,42 +182,42 @@ a{
   flex-direction: column;
   width: 430px;
   height: 265px;
-  background-color: rgba(39,174,96,1);
+  background-color: rgba(39, 174, 96, 1);
   background-size: 100%;
   border-radius: 7%;
   background-repeat: no-repeat;
   background-position: center;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   opacity: 1;
   text-align: left;
   padding-left: 20px;
 }
 
-.services_container h2{
+.services_container h2 {
   font-weight: Bold;
   font-size: 2.5rem;
 }
 
-.services_container p{
+.services_container p {
   font-size: 20px;
   margin-top: auto;
 }
 
-.educational_credit p{
+.educational_credit p {
   margin-top: -0.7rem;
 }
 
 .why_work_text {
   width: 891px;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   font-weight: Bold;
   margin-top: 100px;
   font-size: 3rem;
   opacity: 1;
   text-align: center;
 }
- 
-.why_work_container{
+
+.why_work_container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -235,50 +244,50 @@ a{
   flex-direction: column;
 } */
 
-.v0_658, 
-.v0_662, 
+.v0_658,
+.v0_662,
 .v0_666 {
   width: 28.5%;
   height: 530px;
-  opacity: 1;;
+  opacity: 1;
   box-shadow: 2px 10px 10px rgba(0, 0, 0, 0.5);
   /* overflow: hidden; */
   display: flex;
   flex-direction: column;
   padding: 20px 20px;
   border-radius: 4%;
-  border: 2px solid #27AE60;
+  border: 2px solid #27ae60;
 }
 
-.v0_658 h2, 
+.v0_658 h2,
 .v0_662 h2,
-.v0_666 h2{
+.v0_666 h2 {
   font-size: 2.5rem;
   margin-top: 20px;
 }
 
-.v0_658 p, 
+.v0_658 p,
 .v0_662 p,
-.v0_666 p{
+.v0_666 p {
   font-size: 27.3px;
   margin-top: -15px;
 }
 
-.add_info{
+.add_info {
   display: flex;
   flex-direction: row;
   width: 100%;
   gap: 11%;
 }
 
-.left_side_info{
+.left_side_info {
   display: flex;
   flex-direction: column;
   padding: 50px 100px;
 }
 
 .our_adress_text {
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   font-weight: Bold;
   font-size: 3rem;
   opacity: 1;
@@ -290,13 +299,13 @@ a{
   flex-direction: row;
   width: 380px;
   height: 65px;
-  background-color: rgba(39,174,96,1);
+  background-color: rgba(39, 174, 96, 1);
   align-items: center;
   justify-content: center;
 }
 
 .choose_city {
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   /* margin: 10px; */
   font-weight: Regular;
   font-size: 2rem;
@@ -304,7 +313,7 @@ a{
 }
 
 .address_text_format {
-  color: rgba(39,174,96,1);
+  color: rgba(39, 174, 96, 1);
   font-weight: Medium;
   font-size: 2rem;
   opacity: 1;
@@ -313,7 +322,7 @@ a{
 }
 
 .work_24 {
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   font-weight: Medium;
   font-size: 2.2rem;
   opacity: 1;
@@ -322,7 +331,7 @@ a{
 }
 
 .contacts {
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   font-weight: Bold;
   font-size: 2.2rem;
   opacity: 1;
@@ -331,7 +340,7 @@ a{
 }
 
 .number_505 {
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   font-weight: Medium;
   font-size: 1.5rem;
   opacity: 1;
@@ -340,29 +349,29 @@ a{
 }
 .number_605 {
   font-weight: Medium;
-  color: rgba(0,0,0,1);
+  color: rgba(0, 0, 0, 1);
   font-size: 1.5rem;
   opacity: 1;
   text-align: left;
 }
 
-.ask_virtual_helper{
+.ask_virtual_helper {
   font-weight: Medium;
   font-size: 1.8rem;
   text-align: left;
 }
 
-#map{
+#map {
   width: 40%;
   height: 600px;
   margin-top: 90px;
 }
 
-.footer{
+.footer {
   display: flex;
   flex-direction: row;
   width: 100%;
-  background-color: rgba(39,174,96,1);
+  background-color: rgba(39, 174, 96, 1);
   /* gap: 0rem; */
   justify-content: center;
   color: #fff;
@@ -370,23 +379,23 @@ a{
   padding-bottom: 2rem;
 }
 
-.footer a{
+.footer a {
   color: #fff;
 }
 
-.left_side_container{
+.left_side_container {
   display: flex;
   flex-direction: row;
   gap: 3rem;
 }
 
-.img_and_texts{
+.img_and_texts {
   display: flex;
   flex-direction: column;
   /* gap: rem; */
 }
 
-.img_and_texts div{
+.img_and_texts div {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -394,25 +403,25 @@ a{
   font-size: 1.2rem;
 }
 
-.img_and_texts img{
+.img_and_texts img {
   width: 2rem;
   height: 2rem;
 }
 
-.right_side_container{
+.right_side_container {
   display: flex;
   flex-direction: row;
   font-size: 1.2rem;
   gap: 5rem;
 }
 
-.first_column_footer{
+.first_column_footer {
   display: flex;
   flex-direction: column;
   /* gap: 1.2rem; */
 }
 
-.second_column_footer{
+.second_column_footer {
   display: flex;
   flex-direction: column;
   /* gap: 1.2rem; */

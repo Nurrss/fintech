@@ -59,6 +59,17 @@ router.get("/:id/operations", async (req, res) => {
   }
 });
 
+router.get("/:id/operations", async (req, res) => {
+  try {
+    const id = req.params.id;
+    const operations = (await Students.findById(id).populate("operations"))
+      .operations;
+    res.status(200).json({ operations });
+  } catch (error) {
+    console.log(error);
+  }
+});
+
 router.put("/:id", async (req, res) => {
   try {
     const { fullName, password, phoneNumber, inn, balans, owes, status } =
