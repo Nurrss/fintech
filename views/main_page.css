@@ -12,6 +12,7 @@ a {
   text-decoration: none;
 }
 
+
 .container {
   display: flex;
   flex-direction: column;
@@ -151,6 +152,10 @@ a {
   justify-content: center;
   /* justify-content: space-between; */
   gap: 20px 20px;
+}
+
+.services_container a{
+  color: #fff;
 }
 
 .monitoring_budget {
