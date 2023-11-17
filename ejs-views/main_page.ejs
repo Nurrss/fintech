@@ -177,7 +177,6 @@
         <div id="map"></div>
       </div>
     </div>
-    <p id="tap"><%= id %></p>
 
     <script
       src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
@@ -185,8 +184,6 @@
       defer
     ></script>
     <script>
-      const id = document.getElementById("tap").innerHTML;
-      console.log(`here ${id}`);
       const path = require("path");
 
       const createPath = (page) =>

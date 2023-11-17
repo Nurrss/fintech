@@ -1,4 +1,4 @@
-function jumpToBankDecision() {
+const jump = function jumpToBankDecision() {
     setTimeout(function() {
         document.querySelector('.right_side_container').innerHTML = `
     <p>Дорогой клиент</p>
