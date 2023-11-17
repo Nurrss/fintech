@@ -11,18 +11,18 @@
       <div class="div-2">
         <div class="div-3">
           <div class="div-4">
-            <div class="div-5">Главная</div>
-            <div class="div-5">Кредиты</div>
-            <div class="div-5">Бюджет</div>
+            <a href="/" class="div-5">Главная</a>
+            <a href="/credits" class="div-5">Кредиты</a>
+            <a href="/budget" class="div-5">Бюджет</a>
             <div class="div-5">
-              <div class="div-5">Платежи</div>
+              <a href="/payments" class="div-5">Платежи</a>
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/e00f4fd8-53d0-4d8a-b5ad-c62625a8f6bb?apiKey=1c66e238323c4137aa90a60ae9b42522&"
                 class="img"
               />
             </div>
-            <div class="div-5">Виртуальный помощник</div>
+            <a href="/virtual_helper" class="div-5">Виртуальный помощник</a>
           </div>
           <img
             loading="lazy"
@@ -328,6 +328,11 @@
       </div>
     </div>
     <script>
+      const path = require("path");
+
+      const createPath = (page) =>
+        path.resolve(__dirname, "ejs-views", `${page}.ejs`);
+
       document.addEventListener("DOMContentLoaded", function () {
         const payButtons = ["add"];
 

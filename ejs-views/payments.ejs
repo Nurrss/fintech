@@ -15,11 +15,11 @@
       <div class="div-2">
         <div class="div-3">
           <div class="div-4">
-            <a href="main_page.html" class="div-5">Главная</a>
-            <a href="credits.html" class="div-5">Кредиты</a>
-            <a href="budget.html" class="div-5">Бюджет</a>
-            <a href="" class="div-5">Платежи</a>
-            <a href="" class="div-5">Виртуальный помощник</a>
+            <a href="/" class="div-5">Главная</a>
+            <a href="/credits" class="div-5">Кредиты</a>
+            <a href="/budget" class="div-5">Бюджет</a>
+            <a href="/payments" class="div-5">Платежи</a>
+            <a href="/virtual_helper" class="div-5">Виртуальный помощник</a>
           </div>
         </div>
         <div class="div-11">
@@ -132,91 +132,29 @@
                           </button>
                         </div>
                         <div class="div-63">Сегодня</div>
+                        <% if (operations.length) { %> <% operations.forEach(({
+                        student_name, subject_name, sum , createdAt}) => { %>
                         <div class="div-64">
-                          <img
-                            src="images/cutlery_3170733 1.png"
-                            alt=""
-                            class="img-8"
-                          />
+                          <img src="images/done.png" alt="" class="img-8" />
                           <div class="div-65">
-                            <div class="div-66">Еда/питание</div>
-                            <div class="div-67">20 Апр 2022, 18:55</div>
+                            <div class="div-66"><%= subject_name %></div>
+                            <div class="div-67">
+                              <%=createdAt.toLocaleDateString() + " "+
+                              createdAt.getHours().toString().padStart(2, '0') +
+                              ":" +
+                              createdAt.getMinutes().toString().padStart(2, '0')
+                              %>
+                            </div>
+                          </div>
+                          <div class="div-77">
+                            <span style="color: rgba(0, 0, 0, 1)"
+                              ><%= sum %></span
+                            >
                           </div>
                         </div>
-                        <div class="div-68">
-                          <img
-                            src="images/books_7905481 1.png"
-                            alt=""
-                            class="img-9"
-                          />
-                          <div class="div-69">
-                            <div class="div-70">Образование</div>
-                            <div class="div-71">20 Апр 2022, 18:55</div>
-                          </div>
-                        </div>
-                        <div class="div-72">
-                          <img
-                            src="images/synchronization_6898671 1.png"
-                            class="img-10"
-                          />
-                          <div class="div-73">
-                            <div class="div-74">Пересдача</div>
-                            <div class="div-75">20 Апр 2022, 18:55</div>
-                          </div>
-                        </div>
+
+                        <% }) %> <% } %>
                       </div>
-                    </div>
-                    <div class="column-8">
-                      <div class="div-76">
-                        <div class="div-77">
-                          <span style="color: rgba(0, 0, 0, 1)"
-                            >+$54800.00</span
-                          >
-                        </div>
-                        <div class="div-78">
-                          <span style="color: rgba(0, 0, 0, 1)"
-                            >+$54800.00</span
-                          >
-                        </div>
-                        <div class="div-79">
-                          <span style="color: rgba(0, 0, 0, 1)"
-                            >+$54800.00</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="div-80">
-                  <div class="div-81">
-                    <div class="div-82">
-                      <img
-                        src="images/books_7905481 1.png"
-                        alt=""
-                        class="img-11"
-                      />
-                      <div class="div-83">
-                        <div class="div-84">Образование</div>
-                        <div class="div-85">20 Апр 2022, 18:55</div>
-                      </div>
-                    </div>
-                    <div class="div-86">
-                      <img
-                        src="images/synchronization_6898671 1.png"
-                        class="img-12"
-                      />
-                      <div class="div-87">
-                        <div class="div-88">Пересдача</div>
-                        <div class="div-89">20 Апр 2022, 18:55</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="div-90">
-                    <div class="div-91">
-                      <span style="color: rgba(0, 0, 0, 1)">+$54800.00</span>
-                    </div>
-                    <div class="div-92">
-                      <span style="color: rgba(0, 0, 0, 1)">+$54800.00</span>
                     </div>
                   </div>
                 </div>
@@ -252,18 +190,18 @@
               </div>
             </div>
             <div class="div-107">
-              <a href="">Контакты</a>
+              <a href="#">Контакты</a>
               <br />
-              <a href="">Профиль</a>
+              <a href="#">Профиль</a>
               <br />
-              <a href="">Кредиты</a>
+              <a href="#">Кредиты</a>
             </div>
             <div class="div-108">
-              <a href="">Долги</a>
+              <a href="#">Долги</a>
               <br />
-              <a href="">Бюджеты</a>
+              <a href="#">Бюджеты</a>
               <br />
-              <a href="">Платежи</a>
+              <a href="#">Платежи</a>
               <br />
             </div>
           </div>
@@ -409,6 +347,12 @@
       </div>
     </div>
     <script>
+      console.log(operations);
+      const path = require("path");
+
+      const createPath = (page) =>
+        path.resolve(__dirname, "ejs-views", `${page}.ejs`);
+
       console.log();
       document.addEventListener("DOMContentLoaded", function () {
         const hideButton = document.getElementById("div-62");
