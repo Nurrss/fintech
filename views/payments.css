@@ -14,7 +14,7 @@
 }
 .div-2 {
   display: flex;
-  margin-top: 38px;
+  margin-top: -20px;
   width: 100%;
   max-width: 1658px;
   flex-direction: column;
@@ -44,10 +44,8 @@
 .div-4 {
   z-index: 5;
   width: 100%;
-  margin-top: 7rem;
-  height: 4rem;
-  background-color: rgba(255,255,255,1);
-  position: fixed;
+  margin-top: -3rem;
+  height: 4em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -509,7 +507,7 @@
   background-color: #f2f2f2;
   flex-grow: 1;
   align-items: center;
-  padding: 18px 40px;
+  padding: 18px 43px;
   font: 400 20px Manrope, sans-serif;
   margin-top: 67px;
   height: 56px;
@@ -829,7 +827,7 @@
   display: flex;
   flex-grow: 1;
   flex-direction: column;
-  margin-left: 58px;
+  margin-left: 21px;
   padding: 0 20px;
 }
 @media (max-width: 991px) {
@@ -1119,6 +1117,7 @@
 .div-80 {
   display: flex;
   margin-top: 37px;
+  margin-left: -35PX;
   justify-content: space-between;
   gap: 20px;
 }
@@ -1237,10 +1236,10 @@
   flex-grow: 1;
   flex-basis: 0%;
   flex-direction: column;
-  margin-left: 114px;
+  margin-left: 75px;
 }
 .div-91 {
-  width: calc(42% + 8px);
+  width: calc(45% + 8px);
   margin-left: 85px;
   margin-top: -10px;
   color: #b4b4b4;
@@ -1256,7 +1255,7 @@
   }
 }
 .div-92 {
-  width: calc(42% + 8px);
+  width: calc(45% + 8px);
   color: #b4b4b4;
   margin-left: 85px;
   /* margin-top: -24px; */
@@ -1415,7 +1414,7 @@
   align-self: end;
   display: flex;
   margin-top: 31px;
-  margin-right: 370px;
+  margin-right: 368px;
   width: 387px;
   max-width: 100%;
   flex-direction: column;
