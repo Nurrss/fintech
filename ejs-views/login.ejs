@@ -12,28 +12,41 @@
         <div class="column-4">
           <div class="div-13">
             <div class="div-14">Вход в аккаунт</div>
-            <div>
-              <div class="div-22">
-                <!-- <img loading="lazy" srcset="..." class="img-3" /> -->
-                <input class="div-21" type="text" placeholder="ИИН" />
-              </div>
-            </div>
-            <div>
+            <form id="post-form" method="post" action="/login" class="div-13">
               <div>
-                <!-- <img loading="lazy" srcset="..." class="img-4" /> -->
-                <input class="div-25" type="password" placeholder="Пароль" />
+                <div class="div-22">
+                  <!-- <img loading="lazy" srcset="..." class="img-3" /> -->
+                  <input
+                    class="div-21"
+                    type="text"
+                    placeholder="ИИН"
+                    name="inn"
+                  />
+                </div>
               </div>
-            </div>
-            <div class="div-29">
-              <input
-                type="checkbox"
-                id="checkbox1"
-                name="checkboxGroup"
-                value="option1"
-              />
-              <label for="checkbox1">Запомни меня</label>
-            </div>
-            <a href="main_page.html"><button class="div-32">Вход</button></a>
+              <div>
+                <div>
+                  <!-- <img loading="lazy" srcset="..." class="img-4" /> -->
+                  <input
+                    class="div-25"
+                    type="password"
+                    placeholder="Пароль"
+                    name="password"
+                  />
+                </div>
+              </div>
+
+              <div class="div-29">
+                <input
+                  type="checkbox"
+                  id="checkbox1"
+                  name="checkboxGroup"
+                  value="option1"
+                />
+                <label for="checkbox1">Запомни меня</label>
+              </div>
+              <input class="div-32" type="submit" value="Вход" />
+            </form>
           </div>
         </div>
         <div class="column">
@@ -52,7 +65,7 @@
                   <div class="div-9"><div class="div-10"></div></div>
                 </div>
                 <div class="column-3">
-                  <a href="registration.html"
+                  <a href="/registration"
                     ><div class="div-11">
                       <div class="div-12">Регистрация</div>
                     </div></a
@@ -64,5 +77,11 @@
         </div>
       </div>
     </div>
+    <script>
+      const path = require("path");
+
+      const createPath = (page) =>
+        path.resolve(__dirname, "ejs-views", `${page}.ejs`);
+    </script>
   </body>
 </html>

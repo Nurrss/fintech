@@ -11,18 +11,18 @@
       <div class="div-2">
         <div class="div-3">
           <div class="div-4">
-            <div class="div-5">Главная</div>
-            <div class="div-6">Кредиты</div>
+            <a href="/" class="div-5">Главная</a>
+            <a href="/credits" class="div-5">Кредиты</a>
             <div class="div-7">
-              <div class="div-8">Бюджет</div>
+              <a href="/budget" class="div-5">Бюджет</a>
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/TEMP/3ae0b2ec-9437-4197-b30a-6f737688a7ba?apiKey=1c66e238323c4137aa90a60ae9b42522&"
                 class="img"
               />
             </div>
-            <div class="div-9">Платежи</div>
-            <div class="div-10">Виртуальный помощник</div>
+            <a href="/payments" class="div-5">Платежи</a>
+            <a href="/virtual_helper" class="div-5">Виртуальный помощник</a>
           </div>
           <img
             loading="lazy"
@@ -153,6 +153,11 @@
       </div>
     </div>
     <script>
+      const path = require("path");
+
+      const createPath = (page) =>
+        path.resolve(__dirname, "ejs-views", `${page}.ejs`);
+
       function updateSales() {
         var dropdown = document.getElementById("stateDropdown");
         var selectedValue = dropdown.options[dropdown.selectedIndex].value;

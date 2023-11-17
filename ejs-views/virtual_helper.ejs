@@ -1,194 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link id="styleLink" rel="stylesheet" href="virtual_helper.css">
-    <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="styleLink" rel="stylesheet" href="virtual_helper.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Manrope&display=swap"
+      rel="stylesheet"
+    />
     <title>Virtual Helper</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="div-3">
-            <div class="div-4">
-                <a href="../views/main_page.html" class="div-5">Главная</a>
-                <a href="../views/credits.html" class="div-5">Кредиты</a>
-                <a style="border-bottom: 2px solid #27ae60;" href="../views/budget.html" class="div-5">Бюджет</a>
-                <a href="" class="div-5">Платежи</a>
-                <a href="" class="div-5">Виртуальный помощник</a>
-            </div>
+      <div class="div-3">
+        <div class="div-4">
+          <a href="/" class="div-5">Главная</a>
+          <a href="/credits" class="div-5">Кредиты</a>
+          <a
+            style="border-bottom: 2px solid #27ae60"
+            href="/budget"
+            class="div-5"
+            >Бюджет</a
+          >
+          <a href="/payments" class="div-5">Платежи</a>
+          <a href="virtual_helper" class="div-5">Виртуальный помощник</a>
         </div>
-        
-        <h1>Виртуальный помощник</h1>
-        <div class="chatting_header">
-            <h3 class="faq_menu" style="border-bottom: 3px solid rgba(39,174,96,1);" onclick="jumpToFAQ()">FAQ's</h3>
-            <h3 class="chat_menu" style="color: #000;" onclick="jumpToChat()">Чат с помощником</h3>
-            <h3 class="contacts_menu" style="color: #000;" onclick="jumpToContacts()">Контакты</h3>
-        </div>
+      </div>
 
-        <div class="content">
-            <div class="credit_question">
-                <div style="background-color: #fff;" class="question1">
-                    <p>Как оформить кредит?</p>
-                    <img onclick="giveAnswer()" class="non_clicked_plus1" src="../views/images/non_clicked_plus.png" alt="">
-                </div>
-                <div style="background-color: #fff;" class="answerContainer1">
-                    <p class="credit_answer"></p>
-                </div>
-            </div>
-            <div class="pay_question">
-                <div style="background-color: #fff;" class="question2">
-                    <p>Можем ли мы оплачивать обучения на этом веб-сайте?</p>
-                    <img onclick="giveAnswer2()" class="non_clicked_plus2" src="../views/images/non_clicked_plus.png" alt="">
-                </div>
-                <div style="background-color: #fff;" class="answerContainer2">
-                    <p class="pay_answer"></p>
-                </div>
-            </div>
-            <div class="add_card_question">
-                <div style="background-color: #fff;" class="question3">
-                    <p>Как добавить новую карту?</p>
-                    <img onclick="giveAnswer3()" class="non_clicked_plus3" src="../views/images/non_clicked_plus.png" alt="">
-                </div>
-                <div style="background-color: #fff;" class="answerContainer3">
-                    <p class="add_card_answer"></p>
-                </div>
-            </div>
+      <h1>Виртуальный помощник</h1>
+      <div class="chatting_header">
+        <h3
+          class="faq_menu"
+          style="border-bottom: 3px solid rgba(39, 174, 96, 1)"
+          onclick="jumpToFAQ()"
+        >
+          FAQ's
+        </h3>
+        <h3 class="chat_menu" style="color: #000" onclick="jumpToChat()">
+          Чат с помощником
+        </h3>
+        <h3
+          class="contacts_menu"
+          style="color: #000"
+          onclick="jumpToContacts()"
+        >
+          Контакты
+        </h3>
+      </div>
+
+      <div class="content">
+        <div class="credit_question">
+          <div style="background-color: #fff" class="question1">
+            <p>Как оформить кредит?</p>
+            <img
+              onclick="giveAnswer()"
+              class="non_clicked_plus1"
+              src="images/non_clicked_plus.png"
+              alt=""
+            />
+          </div>
+          <div style="background-color: #fff" class="answerContainer1">
+            <p class="credit_answer"></p>
+          </div>
         </div>
-        <div class="content2">
-            
+        <div class="pay_question">
+          <div style="background-color: #fff" class="question2">
+            <p>Можем ли мы оплачивать обучения на этом веб-сайте?</p>
+            <img
+              onclick="giveAnswer2()"
+              class="non_clicked_plus2"
+              src="images/non_clicked_plus.png"
+              alt=""
+            />
+          </div>
+          <div style="background-color: #fff" class="answerContainer2">
+            <p class="pay_answer"></p>
+          </div>
         </div>
+        <div class="add_card_question">
+          <div style="background-color: #fff" class="question3">
+            <p>Как добавить новую карту?</p>
+            <img
+              onclick="giveAnswer3()"
+              class="non_clicked_plus3"
+              src="images/non_clicked_plus.png"
+              alt=""
+            />
+          </div>
+          <div style="background-color: #fff" class="answerContainer3">
+            <p class="add_card_answer"></p>
+          </div>
+        </div>
+      </div>
+      <div class="content2"></div>
     </div>
     <div class="footer">
-        <div class="left_side_container">
-            <h1>Мы в соц. сетях:</h1>
-            <div class="img_and_texts">
-                <div class="telegram">
-                    <img src="../views/images/telegram (1) 1.png" alt="">
-                    <a href=""><p>bcc.kz</p></a>
-                </div>
-                <div class="instagram">
-                    <img src="../views/images/instagram (6) 1.png" alt="">
-                    <a href=""><p>bcc.kz</p></a>
-                </div>
-                <div class="virtual_helper_footer">
-                    <img src="../views/images/speech-bubble 1.png" alt="">
-                    <a href=""><p>Виртуальный помощник</p></a>
-                </div>
-            </div>
+      <div class="left_side_container">
+        <h1>Мы в соц. сетях:</h1>
+        <div class="img_and_texts">
+          <div class="telegram">
+            <img src="images/telegram (1) 1.png" alt="" />
+            <a href="https://t.me/BankCenterCredit_bot"><p>bcc.kz</p></a>
+          </div>
+          <div class="instagram">
+            <img src="images/instagram (6) 1.png" alt="" />
+            <a href="https://www.instagram.com/centercreditkz"><p>bcc.kz</p></a>
+          </div>
+          <div class="virtual_helper_footer">
+            <img src="images/speech-bubble 1.png" alt="" />
+            <a href="/virtual_helper"><p>Виртуальный помощник</p></a>
+          </div>
         </div>
-        <div class="right_side_container">
-            <div class="first_column_footer">
-                <a href=""><p>Контакты</p></a>
-                <a href=""><p>Профиль</p></a>
-                <a href=""><p>Кредиты</p></a>
-            </div>
-            <div class="second_column_footer">
-                <a href=""><p>Долги</p></a>
-                <a href=""><p>Бюджеты</p></a>
-                <a href=""><p>Платежи</p></a>
-            </div>
+      </div>
+      <div class="right_side_container">
+        <div class="first_column_footer">
+          <a href="#"><p>Контакты</p></a>
+          <a href="#"><p>Профиль</p></a>
+          <a href="#"><p>Кредиты</p></a>
         </div>
+        <div class="second_column_footer">
+          <a href="#"><p>Долги</p></a>
+          <a href="#"><p>Бюджеты</p></a>
+          <a href="#"><p>Платежи</p></a>
+        </div>
+      </div>
     </div>
 
     <script>
-        
-function giveAnswer() {
-    document.querySelector('.credit_answer').innerHTML = `
+      const path = require("path");
+
+      const createPath = (page) =>
+        path.resolve(__dirname, "ejs-views", `${page}.ejs`);
+
+      function giveAnswer() {
+        document.querySelector(".credit_answer").innerHTML = `
         Чтобы оформить кредит вам нужно перейти на страницу "Кредиты". Там вы можете выбрать сумму которую хотите оформить в кредит и выполнить пару действий ради получение кредита в свой счет. 
     `;
 
-    document.querySelector('.non_clicked_plus1').src = '../views/images/clicked_plus.png';
+        document.querySelector(".non_clicked_plus1").src =
+          "images/clicked_plus.png";
 
-    document.querySelector('.non_clicked_plus1').addEventListener('click', hideAnswer);
+        document
+          .querySelector(".non_clicked_plus1")
+          .addEventListener("click", hideAnswer);
 
-    document.querySelector('.answerContainer1').className = 'answer_container1';
+        document.querySelector(".answerContainer1").className =
+          "answer_container1";
 
-    document.querySelector('.question1').style = "background-color: #58C988; color: #fff; box-shadow: ''"
+        document.querySelector(".question1").style =
+          "background-color: #58C988; color: #fff; box-shadow: ''";
 
-    document.querySelector('.answer_container1').style = "background-color: #27AE60; color: #fff; box-shadow: color: #fff''"
-}
+        document.querySelector(".answer_container1").style =
+          "background-color: #27AE60; color: #fff; box-shadow: color: #fff''";
+      }
 
-function hideAnswer() {
-    document.querySelector('.credit_answer').innerHTML = '';
+      function hideAnswer() {
+        document.querySelector(".credit_answer").innerHTML = "";
 
-    document.querySelector('.non_clicked_plus1').src = '../views/images/non_clicked_plus.png';
+        document.querySelector(".non_clicked_plus1").src =
+          "images/non_clicked_plus.png";
 
-    document.querySelector('.non_clicked_plus1').addEventListener('click', giveAnswer);;
+        document
+          .querySelector(".non_clicked_plus1")
+          .addEventListener("click", giveAnswer);
 
-    document.querySelector('.answer_container1').className = 'answerContainer1';
+        document.querySelector(".answer_container1").className =
+          "answerContainer1";
 
-    document.querySelector('.question1').style = "background-color: #fff; box-shadow: 10px 0 10px -10px #000, 0 10px 10px -10px #000, 0 -5px 10px -10px #000, -10px 0 10px -10px #000; color: #000;"
+        document.querySelector(".question1").style =
+          "background-color: #fff; box-shadow: 10px 0 10px -10px #000, 0 10px 10px -10px #000, 0 -5px 10px -10px #000, -10px 0 10px -10px #000; color: #000;";
 
-    document.querySelector('.answerContainer1').style = 'background-color: #fff; color: #000;';
-}
+        document.querySelector(".answerContainer1").style =
+          "background-color: #fff; color: #000;";
+      }
 
-function giveAnswer2() {
-    document.querySelector('.pay_answer').innerHTML = `
+      function giveAnswer2() {
+        document.querySelector(".pay_answer").innerHTML = `
     Да, вы можете. Единственное, что вам следует сделать, это перейти на страницу "платежи". Там вы можете увидеть список расходов университета. Вы можете сделать это, нажав кнопку оплатить, не открывая другие приложения.
     `;
 
-    document.querySelector('.non_clicked_plus2').src = '../views/images/clicked_plus.png';
+        document.querySelector(".non_clicked_plus2").src =
+          "images/clicked_plus.png";
 
-    document.querySelector('.non_clicked_plus2').addEventListener('click', hideAnswer2);
+        document
+          .querySelector(".non_clicked_plus2")
+          .addEventListener("click", hideAnswer2);
 
-    document.querySelector('.answerContainer2').className = 'answer_container2';
+        document.querySelector(".answerContainer2").className =
+          "answer_container2";
 
-    document.querySelector('.question2').style = "background-color: #58C988; color: #fff; box-shadow: ''"
+        document.querySelector(".question2").style =
+          "background-color: #58C988; color: #fff; box-shadow: ''";
 
-    document.querySelector('.answer_container2').style = "background-color: #27AE60; color: #fff; box-shadow: ''"
-}
+        document.querySelector(".answer_container2").style =
+          "background-color: #27AE60; color: #fff; box-shadow: ''";
+      }
 
-function hideAnswer2() {
-    document.querySelector('.pay_answer').innerHTML = '';
+      function hideAnswer2() {
+        document.querySelector(".pay_answer").innerHTML = "";
 
-    document.querySelector('.non_clicked_plus2').src = '../views/images/non_clicked_plus.png';
+        document.querySelector(".non_clicked_plus2").src =
+          "images/non_clicked_plus.png";
 
-    document.querySelector('.non_clicked_plus2').addEventListener('click', giveAnswer2);;
+        document
+          .querySelector(".non_clicked_plus2")
+          .addEventListener("click", giveAnswer2);
 
-    document.querySelector('.answer_container2').className = 'answerContainer2';
+        document.querySelector(".answer_container2").className =
+          "answerContainer2";
 
-    document.querySelector('.question2').style = "background-color: #fff; box-shadow: 10px 0 10px -10px #000, 0 10px 10px -10px #000, 0 -5px 10px -10px #000, -10px 0 10px -10px #000; color: #000;"
+        document.querySelector(".question2").style =
+          "background-color: #fff; box-shadow: 10px 0 10px -10px #000, 0 10px 10px -10px #000, 0 -5px 10px -10px #000, -10px 0 10px -10px #000; color: #000;";
 
-    document.querySelector('.answerContainer2').style = 'background-color: #fff; color: #000;';
-}
+        document.querySelector(".answerContainer2").style =
+          "background-color: #fff; color: #000;";
+      }
 
-function giveAnswer3() {
-    document.querySelector('.add_card_answer').innerHTML = `
+      function giveAnswer3() {
+        document.querySelector(".add_card_answer").innerHTML = `
     Да, вы можете. Единственное, что вам следует сделать, это перейти на страницу "платежи". Там вы можете увидеть список расходов университета. Вы можете сделать это, нажав кнопку оплатить, не открывая другие приложения.
     `;
 
-    document.querySelector('.non_clicked_plus3').src = '../views/images/clicked_plus.png';
+        document.querySelector(".non_clicked_plus3").src =
+          "images/clicked_plus.png";
 
-    document.querySelector('.non_clicked_plus3').addEventListener('click', hideAnswer3);
+        document
+          .querySelector(".non_clicked_plus3")
+          .addEventListener("click", hideAnswer3);
 
-    document.querySelector('.answerContainer3').className = 'answer_container3';
+        document.querySelector(".answerContainer3").className =
+          "answer_container3";
 
-    document.querySelector('.question3').style = "background-color: #58C988; color: #fff; box-shadow: ''"
+        document.querySelector(".question3").style =
+          "background-color: #58C988; color: #fff; box-shadow: ''";
 
-    document.querySelector('.answer_container3').style = "background-color: #27AE60; color: #fff; box-shadow: ''"
-}
+        document.querySelector(".answer_container3").style =
+          "background-color: #27AE60; color: #fff; box-shadow: ''";
+      }
 
-function hideAnswer3() {
-    document.querySelector('.add_card_answer').innerHTML = '';
+      function hideAnswer3() {
+        document.querySelector(".add_card_answer").innerHTML = "";
 
-    document.querySelector('.non_clicked_plus3').src = '../views/images/non_clicked_plus.png';
+        document.querySelector(".non_clicked_plus3").src =
+          "images/non_clicked_plus.png";
 
-    document.querySelector('.non_clicked_plus3').addEventListener('click', giveAnswer3);;
+        document
+          .querySelector(".non_clicked_plus3")
+          .addEventListener("click", giveAnswer3);
 
-    document.querySelector('.answer_container3').className = 'answerContainer3';
+        document.querySelector(".answer_container3").className =
+          "answerContainer3";
 
-    document.querySelector('.question3').style = "background-color: #fff; box-shadow: 10px 0 10px -10px #000, 0 10px 10px -10px #000, 0 -5px 10px -10px #000, -10px 0 10px -10px #000; color: #000;"
+        document.querySelector(".question3").style =
+          "background-color: #fff; box-shadow: 10px 0 10px -10px #000, 0 10px 10px -10px #000, 0 -5px 10px -10px #000, -10px 0 10px -10px #000; color: #000;";
 
-    document.querySelector('.answerContainer3').style = 'background-color: #fff; color: #000;';
-}
+        document.querySelector(".answerContainer3").style =
+          "background-color: #fff; color: #000;";
+      }
 
-function jumpToFAQ() {
-    document.querySelector('.content').innerHTML = `
+      function jumpToFAQ() {
+        document.querySelector(".content").innerHTML = `
     <div class="credit_question">
                 <div style="background-color: #fff;" class="question1">
                     <p>Как оформить кредит?</p>
-                    <img onclick="giveAnswer()" class="non_clicked_plus1" src="../views/images/non_clicked_plus.png" alt="">
+                    <img onclick="giveAnswer()" class="non_clicked_plus1" src="images/non_clicked_plus.png" alt="">
                 </div>
                 <div style="background-color: #fff;" class="answerContainer1">
                     <p class="credit_answer"></p>
@@ -197,7 +272,7 @@ function jumpToFAQ() {
             <div class="pay_question">
                 <div style="background-color: #fff;" class="question2">
                     <p>Можем ли мы оплачивать обучения на этом веб-сайте?</p>
-                    <img onclick="giveAnswer2()" class="non_clicked_plus2" src="../views/images/non_clicked_plus.png" alt="">
+                    <img onclick="giveAnswer2()" class="non_clicked_plus2" src="images/non_clicked_plus.png" alt="">
                 </div>
                 <div style="background-color: #fff;" class="answerContainer2">
                     <p class="pay_answer"></p>
@@ -206,143 +281,145 @@ function jumpToFAQ() {
             <div class="add_card_question">
                 <div style="background-color: #fff;" class="question3">
                     <p>Как добавить новую карту?</p>
-                    <img onclick="giveAnswer3()" class="non_clicked_plus3" src="../views/images/non_clicked_plus.png" alt="">
+                    <img onclick="giveAnswer3()" class="non_clicked_plus3" src="images/non_clicked_plus.png" alt="">
                 </div>
                 <div style="background-color: #fff;" class="answerContainer3">
                     <p class="add_card_answer"></p>
                 </div>
             </div>
     `;
-    
-    document.getElementById('styleLink').href = 'virtual_helper.css';
-    document.querySelector('.contacts_menu').style = 'border-bottom: ""';
-    document.querySelector('.faq_menu').style = 'border-bottom: 2px solid #27ae60;';
-    document.querySelector('.chat_menu').style = 'border-bottom: ""';
-}
 
-function jumpToContacts() {
-    document.querySelector('.content').innerHTML = `
+        document.getElementById("styleLink").href = "virtual_helper.css";
+        document.querySelector(".contacts_menu").style = 'border-bottom: ""';
+        document.querySelector(".faq_menu").style =
+          "border-bottom: 2px solid #27ae60;";
+        document.querySelector(".chat_menu").style = 'border-bottom: ""';
+      }
+
+      function jumpToContacts() {
+        document.querySelector(".content").innerHTML = `
     <h2>Инфо</h2>
             <div class="whatsapp">
                 <div class="img_and_text">
-                    <img src="../views/images/whatsapp.png" alt="">
+                    <img src="images/whatsapp.png" alt="">
                     <p>+7(747)1012685</p>
                 </div>
-                <a href="https://wa.me/+77077287558?text=Hello%20World"><img class="next_icon" src="../views/images/next_icon.png" alt=""></a>
+                <a href="https://wa.me/+77077287558?text=Hello%20World"><img class="next_icon" src="images/next_icon.png" alt=""></a>
             </div>
             <div class="facebook_chat_bot">
                 <div class="img_and_text">
-                    <img src="../views/images/facebook.png" alt="">
+                    <img src="images/facebook.png" alt="">
                     <p>Facebook чат-бот</p>
                 </div>
-                <a href="#"><img class="next_icon" src="../views/images/next_icon.png" alt=""></a>
+                <a href="https://www.facebook.com/bcc.kz?fref=ts"><img class="next_icon" src="images/next_icon.png" alt=""></a>
             </div>
             <div class="telegram_chat_bot">
                 <div class="img_and_text">
-                    <img src="../views/images/telegram.png" alt="">
+                    <img src="images/telegram.png" alt="">
                     <p>Telegram чат-бот</p>
                 </div>
-                <a href="#"><img class="next_icon" src="../views/images/next_icon.png" alt=""></a>
+                <a href="https://t.me/BankCenterCredit_bot"><img class="next_icon" src="images/next_icon.png" alt=""></a>
             </div>
             <div class="vk_chat_bot">
                 <div class="img_and_text">
-                    <img src="../views/images/vk.png" alt="">
+                    <img src="images/vk.png" alt="">
                     <p>Вконтакте чат-бот</p>
                 </div>
-                <a href="#"><img class="next_icon" src="../views/images/next_icon.png" alt=""></a>
+                <a href="https://vk.com/centercredit"><img class="next_icon" src="images/next_icon.png" alt=""></a>
             </div>
     `;
-    
-    document.getElementById('styleLink').href = 'contacts.css';
-    document.querySelector('.contacts_menu').style = 'border-bottom: 2px solid #27ae60;';
-    document.querySelector('.faq_menu').style = 'border-bottom: ""';
-    document.querySelector('.chat_menu').style = 'border-bottom: ""';
-}
 
-function jumpToChat() {
-    document.querySelector('.content').innerHTML = `
+        document.getElementById("styleLink").href = "contacts.css";
+        document.querySelector(".contacts_menu").style =
+          "border-bottom: 2px solid #27ae60;";
+        document.querySelector(".faq_menu").style = 'border-bottom: ""';
+        document.querySelector(".chat_menu").style = 'border-bottom: ""';
+      }
+
+      function jumpToChat() {
+        document.querySelector(".content").innerHTML = `
     <div id="chatContainer"></div>
   <div class="question_input">
     <input type="text" id="questionInput" placeholder="Type your question...">
     <label for="questionInput">
-        <img onclick="getAnswer()" src="../views/images/send 1.png" alt="">
+        <img onclick="getAnswer()" src="images/send 1.png" alt="">
     </label>
   </div>
     `;
-    
-    document.getElementById('styleLink').href = 'chatgpt.css';
-    document.querySelector('.contacts_menu').style = 'border-bottom: ""';
-    document.querySelector('.faq_menu').style = 'border-bottom: ""';
-    document.querySelector('.chat_menu').style = 'border-bottom: 2px solid #27ae60;';
-}
 
-
-const chatHistory = [];
-
-  function getAnswer() {
-    const questionInput = document.getElementById('questionInput');
-    const chatContainer = document.getElementById('chatContainer');
-    const question = questionInput.value.trim();
-
-    if (question === '') {
-      alert('Please enter a question.');
-      return;
-    }
-
-    // Replace this with your own logic to get answers based on the user's question
-    const answer = getPredefinedAnswer(question);
-
-    // const timeStamp = new Date();
-    // const hours = timeStamp.getHours().toString().padStart(2, '0');
-    // const minutes = timeStamp.getMinutes().toString().padStart(2, '0');
-
-    // Add the current question and answer to chat history
-    chatHistory.push({ question, answer });
-
-    // Display the chat history
-    displayChatHistory(chatContainer);
-
-    // Clear the input field
-    questionInput.value = '';
-  }
-
-  function getPredefinedAnswer(question) {
-    // Replace this with your own logic to map questions to predefined answers
-    const answers = {
-      'your name': 'I am a virtual assistant.',
-      'who are you': 'I am a virtual assistant.',
-      'contact': 'Please visit our contact page.',
-      // Add more predefined questions and answers here
-    };
-
-    // Check for keyword matches
-    for (const keyword in answers) {
-      if (question.toLowerCase().includes(keyword)) {
-        return answers[keyword];
+        document.getElementById("styleLink").href = "chatgpt.css";
+        document.querySelector(".contacts_menu").style = 'border-bottom: ""';
+        document.querySelector(".faq_menu").style = 'border-bottom: ""';
+        document.querySelector(".chat_menu").style =
+          "border-bottom: 2px solid #27ae60;";
       }
-    }
 
-    return 'I don\'t have an answer to that question. Please contact us for assistance.';
-  }
+      const chatHistory = [];
 
-  function displayChatHistory(container) {
-    container.innerHTML = '';
+      function getAnswer() {
+        const questionInput = document.getElementById("questionInput");
+        const chatContainer = document.getElementById("chatContainer");
+        const question = questionInput.value.trim();
 
-    // Display each question and answer in the chat history
-    chatHistory.forEach(({ question, answer }) => {
-      container.innerHTML += `<p class="user_questions">${question}</p>`;
-      container.innerHTML += `<p class="user_questions_time">${getFormattedTime()}</p>`;
-      container.innerHTML += `<p class="assistent_answers">${answer}</p>`;
-      container.innerHTML += `<p class="assistent_answers_time">${getFormattedTime()}</p>`;
-    });
-  }
+        if (question === "") {
+          alert("Please enter a question.");
+          return;
+        }
 
-  function getFormattedTime() {
-    const now = new Date();
-    const hours = now.getHours().toString().padStart(2, '0');
-    const minutes = now.getMinutes().toString().padStart(2, '0');
-    return `${hours}:${minutes}`;
-  }
-</script>
-</body>
+        // Replace this with your own logic to get answers based on the user's question
+        const answer = getPredefinedAnswer(question);
+
+        // const timeStamp = new Date();
+        // const hours = timeStamp.getHours().toString().padStart(2, '0');
+        // const minutes = timeStamp.getMinutes().toString().padStart(2, '0');
+
+        // Add the current question and answer to chat history
+        chatHistory.push({ question, answer });
+
+        // Display the chat history
+        displayChatHistory(chatContainer);
+
+        // Clear the input field
+        questionInput.value = "";
+      }
+
+      function getPredefinedAnswer(question) {
+        // Replace this with your own logic to map questions to predefined answers
+        const answers = {
+          "your name": "I am a virtual assistant.",
+          "who are you": "I am a virtual assistant.",
+          contact: "Please visit our contact page.",
+          // Add more predefined questions and answers here
+        };
+
+        // Check for keyword matches
+        for (const keyword in answers) {
+          if (question.toLowerCase().includes(keyword)) {
+            return answers[keyword];
+          }
+        }
+
+        return "I don't have an answer to that question. Please contact us for assistance.";
+      }
+
+      function displayChatHistory(container) {
+        container.innerHTML = "";
+
+        // Display each question and answer in the chat history
+        chatHistory.forEach(({ question, answer }) => {
+          container.innerHTML += `<p class="user_questions">${question}</p>`;
+          container.innerHTML += `<p class="user_questions_time">${getFormattedTime()}</p>`;
+          container.innerHTML += `<p class="assistent_answers">${answer}</p>`;
+          container.innerHTML += `<p class="assistent_answers_time">${getFormattedTime()}</p>`;
+        });
+      }
+
+      function getFormattedTime() {
+        const now = new Date();
+        const hours = now.getHours().toString().padStart(2, "0");
+        const minutes = now.getMinutes().toString().padStart(2, "0");
+        return `${hours}:${minutes}`;
+      }
+    </script>
+  </body>
 </html>

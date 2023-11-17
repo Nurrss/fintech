@@ -13,11 +13,11 @@
   <body>
     <div class="container">
       <div class="div-4">
-        <a href="main_page.html" class="div-5">Главная</a>
-        <a href="credits.html" class="div-5">Кредиты</a>
-        <a href="budget.html" class="div-5">Бюджет</a>
-        <a href="" class="div-5">Платежи</a>
-        <a href="" class="div-5">Виртуальный помощник</a>
+        <a href="/" class="div-5">Главная</a>
+        <a href="/credits" class="div-5">Кредиты</a>
+        <a href="/budget" class="div-5">Бюджет</a>
+        <a href="/payments" class="div-5">Платежи</a>
+        <a href="/virtual_helper" class="div-5">Виртуальный помощник</a>
       </div>
 
       <div class="welcome_container">
@@ -177,6 +177,7 @@
         <div id="map"></div>
       </div>
     </div>
+    <p style="display: none" id="id"><%= id %></p>
 
     <script
       src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
@@ -184,6 +185,13 @@
       defer
     ></script>
     <script>
+      const id = document.getElementById("id").textContent();
+      console.log(id);
+      const path = require("path");
+
+      const createPath = (page) =>
+        path.resolve(__dirname, "ejs-views", `${page}.ejs`);
+
       function initMap() {
         var map = new google.maps.Map(document.getElementById("map"), {
           center: { lat: -34.397, lng: 150.644 },
