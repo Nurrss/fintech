@@ -13,11 +13,11 @@
   <body>
     <div class="container">
       <div class="div-4">
-        <a href="main_page.html" class="div-5">Главная</a>
-        <a href="credits.html" class="div-5">Кредиты</a>
-        <a href="budget.html" class="div-5">Бюджет</a>
-        <a href="" class="div-5">Платежи</a>
-        <a href="" class="div-5">Виртуальный помощник</a>
+        <a href="/" class="div-5">Главная</a>
+        <a href="/credits" class="div-5">Кредиты</a>
+        <a href="/budget" class="div-5">Бюджет</a>
+        <a href="/payments" class="div-5">Платежи</a>
+        <a href="/virtual_helper" class="div-5">Виртуальный помощник</a>
       </div>
       <div class="content">
         <div class="left_side_container">
@@ -121,7 +121,7 @@
     <div id="loading_popup_container">
       <div class="popup_inside_container">
         <h2>
-          Этот процесс пожет занять некоторое <br />
+          Этот процесс может занять некоторое <br />
           времени, пожалуйста подождите
         </h2>
         <img src="images/Spinner-1s-200px.gif" alt="" />
@@ -129,6 +129,13 @@
     </div>
     <script id="own_js_file" src="needed_documents.js"></script>
 
-    <script src="jumpingFromTo.js"></script>
+    <script>
+                  const path = require("path");
+
+      const createPath = (page) =>
+        path.resolve(__dirname, "ejs-views", `${page}.ejs`);
+
+    
+    </script>
   </body>
 </html>

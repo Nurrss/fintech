@@ -9,12 +9,8 @@ router.get("/login", (req, res) => {
   res.render(createPath("login"));
 });
 
-router.get("/registration", (req, res) => {
-  res.render(createPath("registration"));
-});
-
-router.get("/payments", (req, res) => {
-  res.render(createPath("payments"));
+router.get("/academic_credits", (req, res) => {
+  res.render(createPath("academic_credits"));
 });
 
 router.get("/bank_decision", (req, res) => {
@@ -23,6 +19,10 @@ router.get("/bank_decision", (req, res) => {
 
 router.get("/budget", (req, res) => {
   res.render(createPath("budget"));
+});
+
+router.get("/budgets", (req, res) => {
+  res.render(createPath("budgets"));
 });
 
 router.get("/completing", (req, res) => {
@@ -41,33 +41,24 @@ router.get("/needed_documents", (req, res) => {
   res.render(createPath("needed_documents"));
 });
 
+router.get("/profile", (req, res) => {
+  res.render(createPath("profile"));
+});
+
 router.get("/proof_identity", (req, res) => {
   res.render(createPath("proof_identity"));
+});
+
+router.get("/registration", (req, res) => {
+  res.render(createPath("registration"));
 });
 
 router.get("/signing_documents", (req, res) => {
   res.render(createPath("signing_documents"));
 });
 
-router.post("/", async (req, res) => {
-  console.log("here");
-  try {
-    const { fullName, password, phoneNumber, inn, balans, status, owes } =
-      req.body;
-    const student = new Students({
-      fullName,
-      password,
-      phoneNumber,
-      inn,
-      balans,
-      status,
-      owes,
-    });
-    await student.save();
-    res.status(200).redirect(createPath("login"));
-  } catch (error) {
-    console.log(error);
-  }
+router.get("/virtual_helper", (req, res) => {
+  res.render(createPath("virtual_helper"));
 });
 
 //add new operation

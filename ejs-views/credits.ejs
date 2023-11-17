@@ -11,11 +11,11 @@
       <div class="div-2">
         <div class="div-3">
           <div class="div-4">
-            <a href="main_page.html" class="div-5">Главная</a>
-            <a href="credits.html" class="div-5">Кредиты</a>
-            <a href="../budget" class="div-5">Бюджет</a>
-            <a href="" class="div-5">Платежи</a>
-            <a href="" class="div-5">Виртуальный помощник</a>
+            <a href="/" class="div-5">Главная</a>
+            <a href="/credits" class="div-5">Кредиты</a>
+            <a href="/budget" class="div-5">Бюджет</a>
+            <a href="/payments" class="div-5">Платежи</a>
+            <a href="/virtual_helper" class="div-5">Виртуальный помощник</a>
           </div>
         </div>
 
@@ -72,7 +72,7 @@
         </div>
         <div class="div-29">
           <div class="div-30">Срок в месяцах</div>
-          <a style="text-decoration: none" href="academic_credits.html"
+          <a style="text-decoration: none" href="/academic_credits"
             ><div class="div-31">Оформить кредит</div></a
           >
         </div>
@@ -111,24 +111,29 @@
               </div>
             </div>
             <div class="div-51">
-              <a href="">Контакты</a>
+              <a href="#">Контакты</a>
               <br />
-              <a href="">Профиль</a>
+              <a href="#">Профиль</a>
               <br />
-              <a href="">Кредиты</a>
+              <a href="#">Кредиты</a>
             </div>
             <div class="div-52">
-              <a href="">Долги</a>
+              <a href="#">Долги</a>
               <br />
-              <a href="">Бюджеты</a>
+              <a href="#">Бюджеты</a>
               <br />
-              <a href="">Платежи</a>
+              <a href="#">Платежи</a>
               <br />
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script src="/views/script.js"></script>
+    <script src="script.js">
+                  const path = require("path");
+
+      const createPath = (page) =>
+        path.resolve(__dirname, "ejs-views", `${page}.ejs`);
+    </script>
   </body>
 </html>

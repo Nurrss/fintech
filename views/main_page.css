@@ -12,7 +12,6 @@ a {
   text-decoration: none;
 }
 
-
 .container {
   display: flex;
   flex-direction: column;
@@ -28,7 +27,7 @@ a {
   display: flex;
   margin-right: -20px;
   width: 1236px;
-  margin-top: 4rem;
+  margin-top: 1rem;
   max-width: 100%;
   align-items: end;
   justify-content: space-between;
@@ -43,7 +42,6 @@ a {
 .div-4 {
   z-index: 5;
   width: 100%;
-  margin-top: 7rem;
   height: 4rem;
   background-color: rgba(255, 255, 255, 1);
   position: fixed;
@@ -154,7 +152,7 @@ a {
   gap: 20px 20px;
 }
 
-.services_container a{
+.services_container a {
   color: #fff;
 }
 

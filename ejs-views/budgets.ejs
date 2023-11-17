@@ -83,6 +83,11 @@
     </div>
     </div>
     <script>
+      const path = require("path");
+
+      const createPath = (page) =>
+        path.resolve(__dirname, "ejs-views", `${page}.ejs`);
+
       function updateSales() {
         var dropdown = document.getElementById("stateDropdown");
         var selectedValue = dropdown.options[dropdown.selectedIndex].value;
