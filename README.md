@@ -1,3 +1,3 @@
 # fintech : platform bank services
 
-![alt](image/Снимок экрана 2024-01-04 092140.png)
+![Website](image/Снимок%20экрана%202024-01-04%20092140.png)
