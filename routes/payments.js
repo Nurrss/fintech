@@ -8,6 +8,7 @@ router.get("/", async (req, res) => {
   console.log("here");
   try {
     const operations = await Operations.find();
+    const student = await Students.findByID();
     res.status(200).render(createPath(`payments`), { operations });
   } catch (error) {
     console.log(error);
